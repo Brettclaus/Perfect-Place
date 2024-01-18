@@ -32,10 +32,10 @@ function createCountyLayers(response) {
 
             let popupContent = `
                 <h3>${county['\ufeffRow Labels']}</h3>
-                <p>Housing Cost: ${housingCost}</p>
-                <p>Food Cost: ${foodCost}</p>
-                <p>Tax Rate: ${taxRate}</p>
-                <p>Income: ${income}</p>
+                <p>Average Housing Cost (per year): ${housingCost}</p>
+                <p>Average Food Cost (per year): ${foodCost}</p>
+                <p>Average Tax Rate: ${taxRate}</p>
+                <p>Average Median Income (per year): ${income}</p>
                 <a href="https://www.google.com/maps/search/?api=1&query=${lat},${lon}" target="_blank">View on Google Maps</a>
             `;
 
