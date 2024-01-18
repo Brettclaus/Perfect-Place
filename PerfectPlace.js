@@ -34,7 +34,7 @@ function createCountyLayers(response) {
             let foodCost = parseFloat(county['Average of food_cost']);
             let taxRate = parseFloat(county['Average of total_tax_rate']);
             let income = parseFloat(county['Average of median_family_income']);
-            let facts = parseFloat(county["ChatGPT_Info"]);
+            let facts = county["ChatGPT_Info"];
 
             let popupContent = `
                 <h3>${county['County']}</h3>
