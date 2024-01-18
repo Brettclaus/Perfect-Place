@@ -1,5 +1,4 @@
 let map;
-let oms; // Declare oms here to make it accessible throughout your script
 let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
@@ -17,12 +16,8 @@ function createMap() {
     });
     streetmap.addTo(map);
 
-    // Initialize OverlappingMarkerSpiderfier for the map
-    oms = new OverlappingMarkerSpiderfier(map, { keepSpiderfied: true });
-
     d3.json("chat_data.json").then(createCountyLayers);
 
-    // Add layer control after populating the layers
     L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
 }
 
@@ -57,16 +52,37 @@ function createCountyLayers(response) {
 }
 
 function addMarkerToLayer(category, value, marker) {
-    let color;
+    let color, latOffset, lonOffset;
     switch (category) {
-        case 'Housing Cost': color = 'blue'; break;
-        case 'Food Cost': color = 'green'; break;
-        case 'Tax Rate': color = 'red'; break;
-        case 'Income': color = 'orange'; break;
-        default: color = 'gray';
+        case 'Housing Cost': 
+            color = 'blue'; 
+            latOffset = 0.05; 
+            lonOffset = 0.05;
+            break;
+        case 'Food Cost': 
+            color = 'green'; 
+            latOffset = -0.05; 
+            lonOffset = 0.05;
+            break;
+        case 'Tax Rate': 
+            color = 'red'; 
+            latOffset = 0.05; 
+            lonOffset = -0.05;
+            break;
+        case 'Income': 
+            color = 'orange'; 
+            latOffset = -0.05; 
+            lonOffset = -0.05;
+            break;
+        default: 
+            color = 'gray'; 
+            latOffset = 0; 
+            lonOffset = 0;
     }
 
-    let circleMarker = L.circleMarker(marker.getLatLng(), {
+    let adjustedLatLng = new L.LatLng(marker.getLatLng().lat + latOffset, marker.getLatLng().lng + lonOffset);
+    
+    let circleMarker = L.circleMarker(adjustedLatLng, {
         radius: 8,
         fillColor: color,
         color: '#000',
@@ -75,7 +91,10 @@ function addMarkerToLayer(category, value, marker) {
         fillOpacity: 0.8
     }).bindPopup(marker.getPopup().getContent());
 
-    oms.addMarker(circleMarker);
+    circleMarker.category = category;
+    circleMarker.categoryValue = value;
+    circleMarker.isVisible = true; // Initially all markers are visible
+
     layers[category].addLayer(circleMarker);
 }
 
@@ -85,15 +104,21 @@ function updateRangeFilter(category, minId, maxId) {
     document.getElementById(minId + 'Value').textContent = minRange;
     document.getElementById(maxId + 'Value').textContent = maxRange;
 
-    if (map.hasLayer(layers[category])) {
-        layers[category].eachLayer(function(marker) {
-            if (marker[category] >= minRange && marker[category] <= maxRange) {
+    layers[category].eachLayer(function(marker) {
+        if (marker.categoryValue >= minRange && marker.categoryValue <= maxRange) {
+            if (!marker.isVisible) {
                 marker.addTo(map);
-            } else {
-                marker.remove();
+                marker.isVisible = true;
             }
-        });
-    }
+        } else {
+            if (marker.isVisible) {
+                marker.removeFrom(map);
+                marker.isVisible = false;
+            }
+        }
+    });
 }
+
+
 
 createMap(); // Initialize the map and layers
