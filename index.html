@@ -17,6 +17,10 @@
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>
 
+   <!-- Spiderfier for overlapping markers -->
+  <script src="https://jawj.github.io/OverlappingMarkerSpiderfier-Leaflet/bin/oms.min.js"></script>
+
+
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -51,11 +55,11 @@
   <!-- Tax Rate Filter -->
   <div class="filter-section" id="tax-rate-filter">
     <label for="minTaxRateRange">Min Average Tax Rate:</label>
-    <input type="range" id="minTaxRateRange" min="4" max="40" value="5" oninput="updateTaxRateRange()">
+    <input type="range" id="minTaxRateRange" min="4" max="40" value="4" oninput="updateTaxRateRange()">
     <span id="minTaxRateRangeValue">5</span>
 
     <label for="maxTaxRateRange">Max Average Tax Rate:</label>
-    <input type="range" id="maxTaxRateRange" min="5" max="40" value="20" oninput="updateTaxRateRange()">
+    <input type="range" id="maxTaxRateRange" min="5" max="40" value="40" oninput="updateTaxRateRange()">
     <span id="maxTaxRateRangeValue">20</span>
   </div>
 
