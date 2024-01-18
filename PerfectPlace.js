@@ -9,20 +9,21 @@ let layers = {
     "Tax Rate": L.layerGroup(),
     "Income": L.layerGroup()
 };
+
 function createMap() {
     map = L.map("map-id", {
         center: [40.73, -74.0059],
-        zoom: 3,
-        layers: [streetmap, ...Object.values(layers)]
+        zoom: 3
     });
     streetmap.addTo(map);
 
     // Initialize OverlappingMarkerSpiderfier for the map
-    oms = new OverlappingMarkerSpiderfier(map, {
-        keepSpiderfied: true
-    });
+    oms = new OverlappingMarkerSpiderfier(map, { keepSpiderfied: true });
 
     d3.json("chat_data.json").then(createCountyLayers);
+
+    // Add layer control after populating the layers
+    L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
@@ -47,21 +48,35 @@ function createCountyLayers(response) {
             `;
 
             let marker = L.marker([lat, lon]).bindPopup(popupContent);
-            oms.addMarker(marker); // Add the marker to OMS
             addMarkerToLayer('Housing Cost', housingCost, marker);
             addMarkerToLayer('Food Cost', foodCost, marker);
             addMarkerToLayer('Tax Rate', taxRate, marker);
             addMarkerToLayer('Income', income, marker);
         }
     });
-
-    // Add layer control after populating the layers
-    L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
 }
 
 function addMarkerToLayer(category, value, marker) {
-    marker[category] = value;
-    layers[category].addLayer(marker);
+    let color;
+    switch (category) {
+        case 'Housing Cost': color = 'blue'; break;
+        case 'Food Cost': color = 'green'; break;
+        case 'Tax Rate': color = 'red'; break;
+        case 'Income': color = 'orange'; break;
+        default: color = 'gray';
+    }
+
+    let circleMarker = L.circleMarker(marker.getLatLng(), {
+        radius: 8,
+        fillColor: color,
+        color: '#000',
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+    }).bindPopup(marker.getPopup().getContent());
+
+    oms.addMarker(circleMarker);
+    layers[category].addLayer(circleMarker);
 }
 
 function updateRangeFilter(category, minId, maxId) {
@@ -70,13 +85,15 @@ function updateRangeFilter(category, minId, maxId) {
     document.getElementById(minId + 'Value').textContent = minRange;
     document.getElementById(maxId + 'Value').textContent = maxRange;
 
-    layers[category].eachLayer(function(marker) {
-        if (marker[category] >= minRange && marker[category] <= maxRange) {
-            marker.addTo(map);
-        } else {
-            marker.remove();
-        }
-    });
+    if (map.hasLayer(layers[category])) {
+        layers[category].eachLayer(function(marker) {
+            if (marker[category] >= minRange && marker[category] <= maxRange) {
+                marker.addTo(map);
+            } else {
+                marker.remove();
+            }
+        });
+    }
 }
 
 createMap(); // Initialize the map and layers
