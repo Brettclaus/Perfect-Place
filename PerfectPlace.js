@@ -1,4 +1,5 @@
 let map;
+let oms; // Declare oms here to make it accessible throughout your script
 let layers = {
     "Housing Cost": L.layerGroup(),
     "Food Cost": L.layerGroup(),
@@ -17,7 +18,12 @@ function createMap() {
         layers: [streetmap, ...Object.values(layers)]
     });
 
-    L.control.layers({"Street Map": streetmap}, layers, {collapsed: false}).addTo(map);
+    // Initialize OverlappingMarkerSpiderfier for the map
+    oms = new OverlappingMarkerSpiderfier(map, {
+        keepSpiderfied: true
+    });
+
+    d3.json("chat_data.json").then(createCountyLayers);
 }
 
 function createCountyLayers(response) {
@@ -29,9 +35,11 @@ function createCountyLayers(response) {
             let foodCost = parseFloat(county['Average of food_cost']);
             let taxRate = parseFloat(county['Average of total_tax_rate']);
             let income = parseFloat(county['Average of median_family_income']);
+            let facts = county["ChatGPT_Info"];
 
             let popupContent = `
-                <h3>${county['\ufeffRow Labels']}</h3>
+                <h3>${county['County']}</h3>
+                <p>${facts}</p>
                 <p>Average Housing Cost (per year): ${housingCost}</p>
                 <p>Average Food Cost (per year): ${foodCost}</p>
                 <p>Average Tax Rate: ${taxRate}</p>
@@ -40,14 +48,13 @@ function createCountyLayers(response) {
             `;
 
             let marker = L.marker([lat, lon]).bindPopup(popupContent);
+            oms.addMarker(marker); // Add the marker to OMS
             addMarkerToLayer('Housing Cost', housingCost, marker);
             addMarkerToLayer('Food Cost', foodCost, marker);
             addMarkerToLayer('Tax Rate', taxRate, marker);
             addMarkerToLayer('Income', income, marker);
         }
     });
-
-    createMap();
 }
 
 function addMarkerToLayer(category, value, marker) {
@@ -70,4 +77,4 @@ function updateRangeFilter(category, minId, maxId) {
     });
 }
 
-d3.json("counties_col.json").then(createCountyLayers);
+createMap(); // Initialize the map and layers
