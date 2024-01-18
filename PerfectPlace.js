@@ -1,22 +1,21 @@
 let map;
 let oms; // Declare oms here to make it accessible throughout your script
+let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
 let layers = {
     "Housing Cost": L.layerGroup(),
     "Food Cost": L.layerGroup(),
     "Tax Rate": L.layerGroup(),
     "Income": L.layerGroup()
 };
-
 function createMap() {
-    let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    });
-
     map = L.map("map-id", {
         center: [40.73, -74.0059],
         zoom: 3,
         layers: [streetmap, ...Object.values(layers)]
     });
+    streetmap.addTo(map);
 
     // Initialize OverlappingMarkerSpiderfier for the map
     oms = new OverlappingMarkerSpiderfier(map, {
@@ -35,7 +34,7 @@ function createCountyLayers(response) {
             let foodCost = parseFloat(county['Average of food_cost']);
             let taxRate = parseFloat(county['Average of total_tax_rate']);
             let income = parseFloat(county['Average of median_family_income']);
-            let facts = county["ChatGPT_Info"];
+            let facts = parseFloat(county["ChatGPT_Info"]);
 
             let popupContent = `
                 <h3>${county['County']}</h3>
@@ -55,6 +54,9 @@ function createCountyLayers(response) {
             addMarkerToLayer('Income', income, marker);
         }
     });
+
+    // Add layer control after populating the layers
+    L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
 }
 
 function addMarkerToLayer(category, value, marker) {
