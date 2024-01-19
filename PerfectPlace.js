@@ -14,7 +14,7 @@ let layers = {
 function createMap() {
     map = L.map("map-id", {
         center: [40.73, -74.0059],
-        zoom: 3
+        zoom: 4
     });
     streetmap.addTo(map);
 
@@ -134,7 +134,7 @@ function updateRangeFilter(category, minId, maxId) {
                 marker.isVisible = false;
             }
         }
-});
+    });
 }
 
 

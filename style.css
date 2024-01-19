@@ -14,7 +14,7 @@ html, body {
 .filter-container {
   width: 100%; /* Full width of the container */
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: row; /* Stack elements vertically */
   align-items: center; /* Center align the items */
   padding-bottom: 20px; /* Add some padding at the bottom */
 }
@@ -36,5 +36,3 @@ html, body {
 .filter-section input[type=range] {
   width: 100%;
 }
-
-
