@@ -34,9 +34,11 @@ function createCountyLayers(response) {
             let income = parseFloat(county['Average of median_family_income']);
             let rain = parseFloat(county['Inches of Rain']);
             let sun = parseFloat(county['Days of Sun']);
+            let facts = county["ChatGPT_Info"];
 
             let popupContent = `
                 <h3>${county['County']}</h3>
+                <p>${facts}</p>
                 <p>Total Inches of Rain (per year): ${rain}</p>
                 <p>Total Days of Sun (per year): ${sun}</p>
                 <p>Average Housing Cost (per year): ${housingCost}</p>
@@ -132,8 +134,9 @@ function updateRangeFilter(category, minId, maxId) {
                 marker.isVisible = false;
             }
         }
-    });
+});
 }
+
 
 
 
