@@ -73,14 +73,36 @@
     <input type="range" id="maxIncomeRange" min="30000" max="100000" value="100000">
     <span id="maxIncomeRangeValue">100000</span>
   </div>
+
+  <!-- Inches of Rain Filter -->
+  <div class="filter-section" id="rain-filter">
+    <label for="minRainRange">Min Inches of Yearly Rain:</label>
+    <input type="range" id="minRainRange" min="1" max="90" value="1">
+    <span id="minRainRangeValue">1</span>
+
+    <label for="maxRainRange">Max Inches of Yearly Rain:</label>
+    <input type="range" id="maxRainRange" min="1" max="90" value="60">
+    <span id="maxRainRangeValue">60</span>
+  </div>
+
+  <!-- Days of Sun Filter -->
+  <div class="filter-section" id="sun-filter">
+    <label for="minSunRange">Min Yearly Days of Sun:</label>
+    <input type="range" id="minSunRange" min="1" max="365" value="1">
+    <span id="minSunRangeValue">1</span>
+  
+    <label for="maxSunRange">Max Yearly Days of sun:</label>
+    <input type="range" id="maxSunRange" min="1" max="365" value="365">
+    <span id="maxSunRangeValue">365</span>
+  </div>
+
 </div>
 
   <!-- Our JavaScript file -->
   <script type="text/javascript" src="PerfectPlace.js"></script>
 
   <script>
-
-document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('minHousingCostRange').addEventListener('input', function() {
         updateRangeFilter('Housing Cost', 'minHousingCostRange', 'maxHousingCostRange');
       });
@@ -107,6 +129,20 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       document.getElementById('maxIncomeRange').addEventListener('input', function() {
         updateRangeFilter('Income', 'minIncomeRange', 'maxIncomeRange');
+      });
+
+      document.getElementById('minRainRange').addEventListener('input', function() {
+        updateRangeFilter('Rain', 'minRainRange', 'maxRainRange');
+      });
+      document.getElementById('maxRainRange').addEventListener('input', function() {
+        updateRangeFilter('Rain', 'minRainRange', 'maxRainRange');
+      });
+
+      document.getElementById('minSunRange').addEventListener('input', function() {
+        updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
+      });
+      document.getElementById('maxSunRange').addEventListener('input', function() {
+        updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
       });
     });
   </script>

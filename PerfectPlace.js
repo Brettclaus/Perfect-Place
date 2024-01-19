@@ -6,7 +6,9 @@ let layers = {
     "Housing Cost": L.layerGroup(),
     "Food Cost": L.layerGroup(),
     "Tax Rate": L.layerGroup(),
-    "Income": L.layerGroup()
+    "Income": L.layerGroup(),
+    "Rain": L.layerGroup(),
+    "Sun": L.layerGroup(),
 };
 
 function createMap() {
@@ -16,7 +18,7 @@ function createMap() {
     });
     streetmap.addTo(map);
 
-    d3.json("chat_data.json").then(createCountyLayers);
+    d3.json("chat_sun_rain_data.json").then(createCountyLayers);
 
     L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
 }
@@ -30,11 +32,13 @@ function createCountyLayers(response) {
             let foodCost = parseFloat(county['Average of food_cost']);
             let taxRate = parseFloat(county['Average of total_tax_rate']);
             let income = parseFloat(county['Average of median_family_income']);
-            let facts = county["ChatGPT_Info"];
+            let rain = parseFloat(county['Inches of Rain']);
+            let sun = parseFloat(county['Days of Sun']);
 
             let popupContent = `
                 <h3>${county['County']}</h3>
-                <p>${facts}</p>
+                <p>Total Inches of Rain (per year): ${rain}</p>
+                <p>Total Days of Sun (per year): ${sun}</p>
                 <p>Average Housing Cost (per year): ${housingCost}</p>
                 <p>Average Food Cost (per year): ${foodCost}</p>
                 <p>Average Tax Rate: ${taxRate}</p>
@@ -47,6 +51,8 @@ function createCountyLayers(response) {
             addMarkerToLayer('Food Cost', foodCost, marker);
             addMarkerToLayer('Tax Rate', taxRate, marker);
             addMarkerToLayer('Income', income, marker);
+            addMarkerToLayer('Rain', rain, marker);
+            addMarkerToLayer('Sun', sun, marker);
         }
     });
 }
@@ -55,7 +61,7 @@ function addMarkerToLayer(category, value, marker) {
     let color, latOffset, lonOffset;
     switch (category) {
         case 'Housing Cost': 
-            color = 'blue'; 
+            color = 'fuchsia'; 
             latOffset = 0.05; 
             lonOffset = 0.05;
             break;
@@ -74,6 +80,16 @@ function addMarkerToLayer(category, value, marker) {
             latOffset = -0.05; 
             lonOffset = -0.05;
             break;
+        case 'Rain': 
+            color = 'blue'; 
+            latOffset = -0.005; 
+            lonOffset = -0.005;
+            break;
+        case 'Sun': 
+            color = 'yellow'; 
+            latOffset = 0.005; 
+            lonOffset = 0.005;
+            break;
         default: 
             color = 'gray'; 
             latOffset = 0; 
@@ -87,8 +103,8 @@ function addMarkerToLayer(category, value, marker) {
         fillColor: color,
         color: '#000',
         weight: 1,
-        opacity: 1,
-        fillOpacity: 0.8
+        opacity: .5,
+        fillOpacity: 0.5
     }).bindPopup(marker.getPopup().getContent());
 
     circleMarker.category = category;
