@@ -12,6 +12,38 @@ let layers = {
     "All Data": allDataLayer // Add the new layer here
 };
 
+let farmersMarketLayer = L.layerGroup();
+
+function loadFarmersMarkets() {
+    d3.json("farmers_cord.json").then(data => {
+        console.log("Farmers market data loaded", data);
+        data.forEach(market => {
+            let lat = parseFloat(market.latitude);
+            let lon = parseFloat(market.longitude);
+            let count = parseInt(market["Count of State"]);
+
+            if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
+                let radius = count * .5; // Adjust this factor to scale the size of the marker
+                let marker = L.circleMarker([lat, lon], {
+                    radius: radius,
+                    fillColor: "#ff7800",
+                    color: "#000",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                });
+
+                let popupContent = `
+                    <h3>${market["Row Labels"]}</h3>
+                    <p>Number of Farmers Markets: ${count}</p>
+                `;
+                marker.bindPopup(popupContent);
+                farmersMarketLayer.addLayer(marker);
+            }
+        });
+    });
+}
+
 function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -23,8 +55,9 @@ function createMap() {
     streetmap.addTo(map);
 
     d3.json("chat_sun_rain_data.json").then(createCountyLayers);
+    loadFarmersMarkets(); 
 
-    L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
+    L.control.layers({"Street Map": streetmap}, Object.assign({}, layers, {"Farmers Markets": farmersMarketLayer}), { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
@@ -224,27 +257,22 @@ document.addEventListener('DOMContentLoaded', function() {
       updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
     });
 
-// Event listeners for range inputs
-document.getElementById('minHousingCostRange').addEventListener('input', applyAllFilters);
-document.getElementById('maxHousingCostRange').addEventListener('input', applyAllFilters);
-
-document.getElementById('minFoodCostRange').addEventListener('input', applyAllFilters);
-document.getElementById('maxFoodCostRange').addEventListener('input', applyAllFilters);
-
-document.getElementById('minTaxRateRange').addEventListener('input', applyAllFilters);
-document.getElementById('maxTaxRateRange').addEventListener('input', applyAllFilters);
-
-document.getElementById('minIncomeRange').addEventListener('input', applyAllFilters);
-document.getElementById('maxIncomeRange').addEventListener('input', applyAllFilters);
-
-document.getElementById('minRainRange').addEventListener('input', applyAllFilters);
-document.getElementById('maxRainRange').addEventListener('input', applyAllFilters);
-
-document.getElementById('minSunRange').addEventListener('input', applyAllFilters);
-document.getElementById('maxSunRange').addEventListener('input', applyAllFilters);
-
-   
-  });
+  document.addEventListener('DOMContentLoaded', function() {
+    // Event listeners for range inputs
+    document.getElementById('minHousingCostRange').addEventListener('input', applyAllFilters);
+    document.getElementById('maxHousingCostRange').addEventListener('input', applyAllFilters);
+    document.getElementById('minFoodCostRange').addEventListener('input', applyAllFilters);
+    document.getElementById('maxFoodCostRange').addEventListener('input', applyAllFilters);
+    document.getElementById('minTaxRateRange').addEventListener('input', applyAllFilters);
+    document.getElementById('maxTaxRateRange').addEventListener('input', applyAllFilters);
+    document.getElementById('minIncomeRange').addEventListener('input', applyAllFilters);
+    document.getElementById('maxIncomeRange').addEventListener('input', applyAllFilters);
+    document.getElementById('minRainRange').addEventListener('input', applyAllFilters);
+    document.getElementById('maxRainRange').addEventListener('input', applyAllFilters);
+    document.getElementById('minSunRange').addEventListener('input', applyAllFilters);
+    document.getElementById('maxSunRange').addEventListener('input', applyAllFilters);
 
 
+});
 createMap(); // Initialize the map and layers
+});
