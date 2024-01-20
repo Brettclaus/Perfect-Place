@@ -16,12 +16,17 @@ Leaflet.js for interactive maps
 D3.js for data handling
 CSS for styling
 HTML5
+
 Setup and Installation
 To set up this project locally:
 
 Clone the repository: git clone https://github.com/Brettclaus/Perfect-Place.git
+
 Navigate to the project directory: cd perfectplace
+
 Open the index.html file in a web browser.
+
+
 Usage
 Use the range sliders to filter data based on different criteria.
 Click on a map marker to view detailed information about the location.
