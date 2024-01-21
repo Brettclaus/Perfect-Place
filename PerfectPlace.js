@@ -2,6 +2,7 @@ let map;
 
 let allDataLayer = L.layerGroup(); // New layer for all data points
 let farmersMarketLayer = L.layerGroup();
+let crimeRateLayer = L.layerGroup();
 
 let layers = {
     "Housing Cost": L.layerGroup(),
@@ -13,6 +14,48 @@ let layers = {
     "All Data": allDataLayer
 };
 
+function loadCrimeData() {
+    d3.json("crime_cord.json").then(data => {
+        data.forEach(city => {
+            let lat = parseFloat(city.latitude);
+            let lon = parseFloat(city.longitude);
+            let violentCrimeRate = parseFloat(city["Violent Crime"]);
+
+
+            // Define color based on violent crime rate (example ranges, adjust as needed)
+            let markerColor;
+            if (violentCrimeRate < 200) {
+                markerColor = "green";
+            } else if (violentCrimeRate < 400) {
+                markerColor = "orange";
+            } else {
+                markerColor = "red";
+            }
+
+            // Create the marker
+            let marker = L.circleMarker([lat, lon], {
+                radius: 5,
+                fillColor: markerColor,
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+
+            // Popup content
+            let popupContent = `<h3>${city.City}, ${city.State}</h3>
+                                <p>Population: ${city.Population}</p>
+                                <p>Violent Crime Rate: ${city["Violent Crime"]}</p>
+                                <p>Property Crime Rate: ${city["Property Crime"]}</p>
+                                ...`; // Add more details as needed
+
+            marker.bindPopup(popupContent);
+            // Add marker to a layer or directly to the map
+            crimeRateLayer.addLayer(marker);
+        });
+    });
+}
+
 function loadFarmersMarkets() {
     d3.json("farmers_cord.json").then(data => {
         data.forEach(market => {
@@ -20,7 +63,7 @@ function loadFarmersMarkets() {
             let lon = parseFloat(market.longitude);
             let count = parseInt(market["Count of State"]);
             if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
-                let radius = count * .5; // Adjust this factor to scale the size of the marker
+                let radius = count *.5; // Adjust this factor to scale the size of the marker
                 let marker = L.circleMarker([lat, lon], {
                     radius: radius,
                     fillColor: "#ff7800",
@@ -46,7 +89,8 @@ function createMap() {
     streetmap.addTo(map);
     d3.json("chat_sun_rain_data.json").then(createCountyLayers);
     loadFarmersMarkets();
-    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer}, { collapsed: false }).addTo(map);
+    loadCrimeData();
+    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer, "Crime Rates": crimeRateLayer}, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
@@ -166,6 +210,25 @@ function applyAllFilters() {
     }
 }
 document.addEventListener('DOMContentLoaded', function() {
+    // Function to update all layers based on the current filter values
+    function updateAllLayers() {
+        updateRangeFilter('Housing Cost', 'minHousingCostRange', 'maxHousingCostRange');
+        updateRangeFilter('Food Cost', 'minFoodCostRange', 'maxFoodCostRange');
+        updateRangeFilter('Tax Rate', 'minTaxRateRange', 'maxTaxRateRange');
+        updateRangeFilter('Income', 'minIncomeRange', 'maxIncomeRange');
+        updateRangeFilter('Rain', 'minRainRange', 'maxRainRange');
+        updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
+        applyAllFilters();
+    }
+
+    // Add event listeners for each filter range input
+    document.querySelectorAll('.filter-section input[type=range]').forEach(input => {
+        input.addEventListener('input', updateAllLayers);
+    });
+
+    createMap(); // Initialize the map and layers
+});
+/*document.addEventListener('DOMContentLoaded', function() {
     // Event listeners for Housing Cost filter
     document.getElementById('minHousingCostRange').addEventListener('input', function() {
         updateRangeFilter('Housing Cost', 'minHousingCostRange', 'maxHousingCostRange');
@@ -227,4 +290,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     createMap(); // Initialize the map and layers
-});
+});*/
+
