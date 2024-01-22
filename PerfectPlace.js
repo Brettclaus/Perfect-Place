@@ -84,7 +84,7 @@ function loadFastFood() {
         data.forEach(city => {
             let lat = parseFloat(city.Latitude);
             let lon = parseFloat(city.Longitude);
-            let count = parseInt(city["Count of State"]);
+            let count = parseInt(city["UniqueFastFoodChains"]);
             if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
                 let radius = count *.5; // Adjust this factor to scale the size of the marker
                 let marker = L.circleMarker([lat, lon], {
@@ -252,67 +252,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     createMap(); // Initialize the map and layers
 });
-/*document.addEventListener('DOMContentLoaded', function() {
-    // Event listeners for Housing Cost filter
-    document.getElementById('minHousingCostRange').addEventListener('input', function() {
-        updateRangeFilter('Housing Cost', 'minHousingCostRange', 'maxHousingCostRange');
-        applyAllFilters();
-    });
-    document.getElementById('maxHousingCostRange').addEventListener('input', function() {
-        updateRangeFilter('Housing Cost', 'minHousingCostRange', 'maxHousingCostRange');
-        applyAllFilters();
-    });
-
-    // Event listeners for Food Cost filter
-    document.getElementById('minFoodCostRange').addEventListener('input', function() {
-        updateRangeFilter('Food Cost', 'minFoodCostRange', 'maxFoodCostRange');
-        applyAllFilters();
-    });
-    document.getElementById('maxFoodCostRange').addEventListener('input', function() {
-        updateRangeFilter('Food Cost', 'minFoodCostRange', 'maxFoodCostRange');
-        applyAllFilters();
-    });
-
-    // Event listeners for Tax Rate filter
-    document.getElementById('minTaxRateRange').addEventListener('input', function() {
-        updateRangeFilter('Tax Rate', 'minTaxRateRange', 'maxTaxRateRange');
-        applyAllFilters();
-    });
-    document.getElementById('maxTaxRateRange').addEventListener('input', function() {
-        updateRangeFilter('Tax Rate', 'minTaxRateRange', 'maxTaxRateRange');
-        applyAllFilters();
-    });
-
-    // Event listeners for Income filter
-    document.getElementById('minIncomeRange').addEventListener('input', function() {
-        updateRangeFilter('Income', 'minIncomeRange', 'maxIncomeRange');
-        applyAllFilters();
-    });
-    document.getElementById('maxIncomeRange').addEventListener('input', function() {
-        updateRangeFilter('Income', 'minIncomeRange', 'maxIncomeRange');
-        applyAllFilters();
-    });
-
-    // Event listeners for Rain filter
-    document.getElementById('minRainRange').addEventListener('input', function() {
-        updateRangeFilter('Rain', 'minRainRange', 'maxRainRange');
-        applyAllFilters();
-    });
-    document.getElementById('maxRainRange').addEventListener('input', function() {
-        updateRangeFilter('Rain', 'minRainRange', 'maxRainRange');
-        applyAllFilters();
-    });
-
-    // Event listeners for Sun filter
-    document.getElementById('minSunRange').addEventListener('input', function() {
-        updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
-        applyAllFilters();
-    });
-    document.getElementById('maxSunRange').addEventListener('input', function() {
-        updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
-        applyAllFilters();
-    });
-
-    createMap(); // Initialize the map and layers
-});*/
-
