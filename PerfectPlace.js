@@ -67,7 +67,7 @@ function loadFarmersMarkets() {
             let lon = parseFloat(market.longitude);
             let count = parseInt(market["Count of State"]);
             if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
-                let radius = count *.5; // Adjust this factor to scale the size of the marker
+                let radius = count *2; // Adjust this factor to scale the size of the marker
                 let marker = L.circleMarker([lat, lon], {
                     radius: radius,
                     fillColor: "#ff7800",
