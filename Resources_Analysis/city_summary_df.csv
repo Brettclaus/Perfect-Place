@@ -1,0 +1,511 @@
+State,City,Cost of Living Index
+AK,Anchorage,110.7
+AK,Fairbanks,107.9
+AL,Albertville,90.9
+AL,Anniston,85.7
+AL,Auburn,91.9
+AL,Birmingham,90.7
+AL,Cullman,90.5
+AL,Daphne,96.6
+AL,Decatur,88.6
+AL,Dothan,86.3
+AL,Florence,86.8
+AL,Gadsden,86.0
+AL,Huntsville,91.3
+AL,Mobile,88.3
+AL,Montgomery,88.5
+AL,Talladega,87.4
+AL,Tuscaloosa,91.0
+AR,Fayetteville,90.4
+AR,Fort Smith,84.2
+AR,Hot Springs,87.3
+AR,Jonesboro,85.2
+AR,Little Rock,88.0
+AR,Pine Bluff,82.3
+AR,Russellville,85.5
+AR,Searcy,85.4
+AZ,Flagstaff,108.5
+AZ,Lake Havasu City,98.4
+AZ,Phoenix,104.3
+AZ,Prescott,104.6
+AZ,Show Low,101.9
+AZ,Sierra Vista,93.2
+AZ,Tucson,97.7
+AZ,Yuma,94.5
+CA,Bakersfield,102.9
+CA,Chico,110.5
+CA,Clearlake,108.8
+CA,El Centro,102.3
+CA,Eureka,116.5
+CA,Fresno,105.9
+CA,Hanford,105.4
+CA,Los Angeles,140.6
+CA,Madera,108.9
+CA,Merced,108.2
+CA,Modesto,112.3
+CA,Napa,149.6
+CA,Redding,108.7
+CA,Riverside,116.1
+CA,Sacramento,120.3
+CA,Salinas,138.3
+CA,San Diego,136.2
+CA,San Francisco,178.6
+CA,San Jose,173.5
+CA,San Luis Obispo,136.1
+CA,Santa Cruz,163.9
+CA,Santa Maria,143.0
+CA,Santa Rosa,141.7
+CA,Stockton,113.6
+CA,Truckee,132.8
+CA,Ukiah,128.0
+CA,Vallejo,125.2
+CA,Ventura,132.2
+CA,Visalia,103.6
+CA,Yuba City,108.7
+CO,Boulder,118.7
+CO,Colorado Springs,102.2
+CO,Denver,112.1
+CO,Fort Collins,109.2
+CO,Glenwood Springs,127.8
+CO,Grand Junction,98.1
+CO,Greeley,106.1
+CO,Pueblo,92.2
+CT,Hartford,104.8
+CT,New Haven,107.7
+CT,New London,105.9
+CT,Stamford,119.2
+CT,Torrington,105.2
+DC,Washington,120.1
+DE,Dover,101.3
+FL,Crestview,104.7
+FL,Daytona Beach,99.6
+FL,Fort Myers,101.5
+FL,Gainesville,97.3
+FL,Homosassa Springs,95.5
+FL,Jacksonville,99.0
+FL,Key West,140.0
+FL,Lake City,93.6
+FL,Lakeland,96.4
+FL,Melbourne,99.3
+FL,Miami,110.1
+FL,Naples,109.4
+FL,Ocala,94.5
+FL,Orlando,101.4
+FL,Palatka,93.2
+FL,Panama City,101.9
+FL,Pensacola,97.9
+FL,Port St. Lucie,101.1
+FL,Punta Gorda,100.3
+FL,Sarasota,104.4
+FL,Sebring,93.1
+FL,Tallahassee,96.4
+FL,Tampa,101.4
+FL,The Villages,100.7
+FL,Vero Beach,98.9
+GA,Albany,87.3
+GA,Athens,95.0
+GA,Atlanta,100.3
+GA,Augusta,91.6
+GA,Brunswick,94.4
+GA,Columbus,88.5
+GA,Dalton,89.1
+GA,Gainesville,97.0
+GA,Hinesville,90.8
+GA,Jefferson,97.4
+GA,LaGrange,86.0
+GA,Macon,87.2
+GA,Rome,89.6
+GA,Savannah,97.3
+GA,Statesboro,91.1
+GA,Valdosta,89.2
+GA,Warner Robins,90.5
+HI,Hilo,136.9
+HI,Honolulu,158.0
+HI,Kahului,158.5
+HI,Kapaa,164.9
+IA,Ames,91.5
+IA,Cedar Rapids,88.1
+IA,Davenport,87.2
+IA,Des Moines,91.7
+IA,Dubuque,89.6
+IA,Iowa City,93.5
+IA,Sioux City,87.1
+IA,Waterloo,87.6
+ID,Boise City,100.3
+ID,Coeur d'Alene,103.3
+ID,Idaho Falls,91.7
+ID,Lewiston,92.5
+ID,Pocatello,90.8
+ID,Twin Falls,91.2
+IL,Bloomington,89.0
+IL,Carbondale,83.5
+IL,Champaign,89.0
+IL,Chicago,100.1
+IL,Danville,83.9
+IL,Decatur,84.9
+IL,Kankakee,91.0
+IL,Ottawa,86.6
+IL,Peoria,86.7
+IL,Quincy,87.3
+IL,Rockford,87.2
+IL,Springfield,87.5
+IN,Bloomington,92.4
+IN,Columbus,89.1
+IN,Elkhart,88.5
+IN,Evansville,87.2
+IN,Fort Wayne,86.8
+IN,Indianapolis,90.2
+IN,Kokomo,84.9
+IN,Lafayette,88.7
+IN,Marion,81.8
+IN,Michigan City,87.8
+IN,Muncie,83.7
+IN,Richmond,84.2
+IN,South Bend,87.2
+IN,Terre Haute,84.7
+IN,Warsaw,92.3
+KS,Hutchinson,84.0
+KS,Lawrence,91.6
+KS,Manhattan,89.6
+KS,Topeka,85.6
+KS,Wichita,86.8
+KY,Bowling Green,87.0
+KY,Elizabethtown,88.1
+KY,Frankfort,88.1
+KY,Lexington,91.1
+KY,London,84.6
+KY,Louisville,91.6
+KY,Owensboro,86.6
+KY,Paducah,85.7
+KY,Richmond,90.8
+LA,Alexandria,86.2
+LA,Baton Rouge,91.1
+LA,Hammond,89.0
+LA,Houma,89.9
+LA,Lafayette,89.6
+LA,Lake Charles,89.4
+LA,Monroe,86.5
+LA,New Orleans,92.4
+LA,Opelousas,86.1
+LA,Shreveport,85.8
+MA,Barnstable Town,122.4
+MA,Boston,132.6
+MA,Greenfield Town,106.2
+MA,Pittsfield,106.4
+MA,Springfield,106.5
+MA,Worcester,113.2
+MD,Baltimore,107.0
+MD,California,104.8
+MD,Cumberland,90.9
+MD,Hagerstown,99.7
+MD,Salisbury,103.2
+ME,Augusta,100.0
+ME,Bangor,98.0
+ME,Lewiston,99.7
+ME,Portland,113.0
+MI,Adrian,90.5
+MI,Ann Arbor,99.3
+MI,Battle Creek,85.9
+MI,Bay City,85.4
+MI,Detroit,93.2
+MI,Flint,85.7
+MI,Grand Rapids,93.7
+MI,Holland,96.2
+MI,Jackson,87.4
+MI,Kalamazoo,89.3
+MI,Lansing,88.7
+MI,Marquette,91.3
+MI,Midland,87.0
+MI,Monroe,90.5
+MI,Mount Pleasant,86.8
+MI,Muskegon,87.7
+MI,Niles,89.7
+MI,Owosso,84.8
+MI,Saginaw,84.0
+MI,Traverse City,99.6
+MN,Brainerd,97.9
+MN,Duluth,93.2
+MN,Faribault,102.3
+MN,Mankato,95.3
+MN,Minneapolis,105.4
+MN,Rochester,97.3
+MN,St. Cloud,95.4
+MO,Branson,89.5
+MO,Cape Girardeau,88.1
+MO,Columbia,89.8
+MO,Farmington,85.4
+MO,Jefferson City,86.3
+MO,Joplin,85.2
+MO,Kansas City,91.6
+MO,Springfield,86.7
+MO,St. Joseph,85.5
+MO,St. Louis,89.6
+MS,Gulfport,86.8
+MS,Hattiesburg,86.1
+MS,Jackson,87.8
+MS,Laurel,85.9
+MS,Meridian,82.0
+MS,Tupelo,87.2
+MT,Billings,95.7
+MT,Bozeman,125.3
+MT,Great Falls,91.1
+MT,Helena,104.2
+MT,Kalispell,112.7
+MT,Missoula,103.4
+NC,Asheville,103.3
+NC,Burlington,91.8
+NC,Charlotte,97.9
+NC,Dunn,91.4
+NC,Durham,99.8
+NC,Elizabeth City,91.1
+NC,Fayetteville,89.5
+NC,Forest City,89.4
+NC,Goldsboro,88.5
+NC,Greensboro,91.0
+NC,Greenville,89.8
+NC,Hickory,89.8
+NC,Jacksonville,91.7
+NC,Lumberton,83.4
+NC,Morehead City,102.2
+NC,Mount Airy,89.0
+NC,New Bern,90.2
+NC,North Wilkesboro,90.5
+NC,Raleigh,99.7
+NC,Roanoke Rapids,83.1
+NC,Rocky Mount,88.3
+NC,Shelby,88.1
+NC,Wilmington,99.0
+NC,Wilson,86.3
+NC,Winston-Salem,91.2
+ND,Bismarck,93.1
+ND,Fargo,91.4
+ND,Grand Forks,90.7
+ND,Minot,90.7
+NE,Grand Island,88.8
+NE,Lincoln,94.7
+NE,Omaha,92.9
+NH,Claremont,102.3
+NH,Concord,108.3
+NH,Keene,102.1
+NH,Manchester,109.6
+NJ,Atlantic City,102.0
+NJ,Ocean City,109.5
+NJ,Trenton,104.3
+NJ,Vineland,97.8
+NM,Alamogordo,85.8
+NM,Albuquerque,92.9
+NM,Farmington,88.4
+NM,Gallup,90.0
+NM,Hobbs,87.7
+NM,Las Cruces,88.8
+NM,Roswell,86.3
+NM,Santa Fe,105.1
+NV,Carson City,103.0
+NV,Las Vegas,100.7
+NV,Reno,107.4
+NY,Albany,100.1
+NY,Auburn,93.7
+NY,Binghamton,93.3
+NY,Buffalo,97.3
+NY,Corning,90.9
+NY,Elmira,92.5
+NY,Glens Falls,98.6
+NY,Ithaca,101.7
+NY,Jamestown,91.3
+NY,Kingston,106.1
+NY,New York,128.0
+NY,Ogdensburg,88.3
+NY,Olean,89.0
+NY,Plattsburgh,93.7
+NY,Rochester,96.6
+NY,Syracuse,95.1
+NY,Utica,94.1
+NY,Watertown,96.4
+OH,Akron,89.4
+OH,Ashtabula,87.4
+OH,Athens,88.5
+OH,Canton,88.2
+OH,Chillicothe,89.8
+OH,Cincinnati,92.4
+OH,Cleveland,90.0
+OH,Columbus,93.9
+OH,Dayton,88.4
+OH,Findlay,91.1
+OH,Lima,87.2
+OH,Mansfield,86.2
+OH,Marion,85.7
+OH,New Philadelphia,88.9
+OH,Portsmouth,84.7
+OH,Salem,86.6
+OH,Sandusky,90.8
+OH,Springfield,87.5
+OH,Toledo,87.5
+OH,Wooster,95.5
+OH,Youngstown,86.4
+OH,Zanesville,87.6
+OK,Enid,82.9
+OK,Lawton,82.8
+OK,Muskogee,81.3
+OK,Oklahoma City,87.3
+OK,Shawnee,82.4
+OK,Stillwater,86.3
+OK,Tulsa,86.7
+OR,Albany,105.4
+OR,Bend,115.9
+OR,Coos Bay,102.0
+OR,Corvallis,110.6
+OR,Eugene,108.4
+OR,Grants Pass,106.6
+OR,Hermiston,97.9
+OR,Klamath Falls,97.1
+OR,Medford,107.5
+OR,Portland,116.5
+OR,Roseburg,100.8
+OR,Salem,105.8
+PA,Allentown,98.9
+PA,Altoona,90.8
+PA,Bloomsburg,93.2
+PA,Chambersburg,95.7
+PA,DuBois,88.2
+PA,East Stroudsburg,96.1
+PA,Erie,91.8
+PA,Gettysburg,98.2
+PA,Harrisburg,95.8
+PA,Indiana,90.8
+PA,Johnstown,87.6
+PA,Lancaster,99.5
+PA,Lebanon,95.4
+PA,Meadville,88.5
+PA,New Castle,88.1
+PA,Philadelphia,103.4
+PA,Pittsburgh,93.1
+PA,Pottsville,87.0
+PA,Reading,96.0
+PA,Scranton,91.3
+PA,Somerset,89.3
+PA,State College,99.8
+PA,Sunbury,88.6
+PA,Williamsport,93.4
+PA,York,95.8
+RI,Providence,111.5
+SC,Charleston,101.7
+SC,Columbia,91.9
+SC,Florence,87.7
+SC,Greenville,95.0
+SC,Greenwood,88.7
+SC,Hilton Head Island,109.4
+SC,Myrtle Beach,94.7
+SC,Orangeburg,85.3
+SC,Seneca,94.0
+SC,Spartanburg,91.0
+SC,Sumter,88.1
+SD,Rapid City,94.2
+SD,Sioux Falls,92.8
+TN,Chattanooga,91.2
+TN,Clarksville,88.7
+TN,Cleveland,89.5
+TN,Cookeville,90.9
+TN,Greeneville,86.5
+TN,Jackson,85.2
+TN,Johnson City,88.1
+TN,Kingsport,86.0
+TN,Knoxville,91.6
+TN,Memphis,88.2
+TN,Morristown,87.3
+TN,Nashville,100.1
+TN,Sevierville,103.5
+TN,Tullahoma,88.7
+TX,Abilene,89.1
+TX,Amarillo,88.2
+TX,Athens,92.9
+TX,Austin,106.6
+TX,Beaumont,88.6
+TX,Brownsville,87.8
+TX,College Station,92.3
+TX,Corpus Christi,93.3
+TX,Dallas,98.5
+TX,El Paso,88.6
+TX,Houston,95.8
+TX,Huntsville,91.2
+TX,Killeen,88.6
+TX,Laredo,90.1
+TX,Longview,88.5
+TX,Lubbock,88.8
+TX,Lufkin,88.2
+TX,Marshall,89.9
+TX,McAllen,86.0
+TX,Midland,97.8
+TX,Nacogdoches,89.6
+TX,Odessa,92.7
+TX,San Angelo,90.7
+TX,San Antonio,92.7
+TX,Sherman,91.3
+TX,Texarkana,86.3
+TX,Tyler,92.8
+TX,Victoria,89.5
+TX,Waco,89.5
+TX,Wichita Falls,85.7
+UT,Logan,95.2
+UT,Ogden,99.8
+UT,Provo,100.9
+UT,Salt Lake City,105.9
+UT,St. George,98.0
+VA,Blacksburg,94.5
+VA,Charlottesville,102.1
+VA,Danville,87.1
+VA,Harrisonburg,95.5
+VA,Lynchburg,93.6
+VA,Martinsville,85.0
+VA,Richmond,99.2
+VA,Roanoke,94.1
+VA,Staunton,94.5
+VA,Virginia Beach,99.0
+VA,Winchester,97.2
+VT,Burlington,112.8
+WA,Aberdeen,97.6
+WA,Bellingham,111.6
+WA,Bremerton,115.0
+WA,Centralia,103.3
+WA,Kennewick,99.7
+WA,Longview,101.6
+WA,Moses Lake,95.7
+WA,Mount Vernon,110.1
+WA,Oak Harbor,125.2
+WA,Olympia,110.9
+WA,Port Angeles,109.1
+WA,Seattle,124.6
+WA,Shelton,109.6
+WA,Spokane,100.4
+WA,Walla Walla,100.9
+WA,Wenatchee,106.6
+WA,Yakima,97.5
+WI,Appleton,90.7
+WI,Beaver Dam,92.9
+WI,Eau Claire,91.8
+WI,Fond du Lac,88.0
+WI,Green Bay,91.4
+WI,Janesville,89.8
+WI,La Crosse,91.8
+WI,Madison,99.5
+WI,Manitowoc,87.8
+WI,Marinette,86.6
+WI,Milwaukee,93.8
+WI,Oshkosh,89.0
+WI,Racine,90.9
+WI,Sheboygan,89.7
+WI,Stevens Point,91.5
+WI,Watertown,97.1
+WI,Wausau,88.9
+WI,Whitewater,97.7
+WI,Wisconsin Rapids,86.9
+WV,Beckley,80.0
+WV,Bluefield,81.2
+WV,Charleston,83.9
+WV,Clarksburg,83.4
+WV,Huntington,84.3
+WV,Morgantown,88.5
+WV,Parkersburg,84.7
+WV,Weirton,82.6
+WV,Wheeling,84.1
+WY,Casper,94.2
+WY,Cheyenne,96.9
