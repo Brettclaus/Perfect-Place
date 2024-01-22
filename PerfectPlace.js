@@ -25,6 +25,8 @@ let layers = {
 };
 
 
+
+
 function loadTravelScoreData() {
     d3.json("travel_coord.json").then(data => {
         data.forEach(city => {
@@ -188,6 +190,27 @@ function createMap() {
         center: [40.73, -74.0059],
         zoom: 4
     });
+
+    fetch('Full_AT.json')
+    .then(response => response.json())
+    .then(data => {
+        L.geoJSON(data, {
+            style: function (feature) {
+                return {color: "#008000"};
+            }
+        }).addTo(map);
+    });
+
+    fetch('Full_PCT.geojson')
+    .then(response => response.json())
+    .then(data => {
+        L.geoJSON(data, {
+            style: function (feature) {
+                return {color: "#008000"};
+            }
+        }).addTo(map);
+    });
+
     streetmap.addTo(map);
     d3.json("chat_sun_rain_data.json").then(createCountyLayers);
     loadFarmersMarkets();
