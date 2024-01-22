@@ -6,6 +6,7 @@ let violentCrimeLayer = L.layerGroup();
 let propertyCrimeLayer = L.layerGroup();
 let colIndexLayer = L.layerGroup();
 let fastFoodLayer = L.layerGroup();
+let travelScoreLayer = L.layerGroup();
 
 let layers = {
     "Housing Cost": L.layerGroup(),
@@ -19,8 +20,32 @@ let layers = {
     "Fast Food types": fastFoodLayer,
     "Cost of Living Index": colIndexLayer,
     "Violent Crime Rate": violentCrimeLayer,
-    "Property Crime Rate": propertyCrimeLayer
+    "Property Crime Rate": propertyCrimeLayer,
+    "Average Travel Score": travelScoreLayer,
 };
+
+
+function loadTravelScoreData() {
+    d3.json("travel_coord.json").then(data => {
+        data.forEach(city => {
+            let lat = parseFloat(city.latitude);
+            let lon = parseFloat(city.longitude);
+            let travelScore = parseFloat(city["Average Travel Score"]);
+            let travelColor = travelScore < 40 ? "red" : travelScore < 60 ? "orange" : "green";
+
+            let travelScoreMarker = L.circleMarker([lat, lon], {
+                radius: 5,
+                fillColor: travelColor,
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            }).bindPopup(`<h3>${city.City}, ${city.State}</h3><p>Average Travel Score: ${travelScore}</p>`);
+
+            travelScoreLayer.addLayer(travelScoreMarker);
+        });
+    });
+}
 
 function loadViolentCrimeData() {
     d3.json("crime_coord.json").then(data => {
@@ -155,6 +180,10 @@ function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
+    let artsymap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles © Esri'
+    });
+
     map = L.map("map-id", {
         center: [40.73, -74.0059],
         zoom: 4
@@ -166,7 +195,8 @@ function createMap() {
     loadViolentCrimeData();
     loadFastFood();
     loadCOLIndex();
-    L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
+    loadTravelScoreData();
+    L.control.layers({"Street Map": streetmap, "other": artsymap}, layers, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
