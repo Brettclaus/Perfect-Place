@@ -19,7 +19,7 @@ function loadCrimeData() {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
-            let violentCrimeRate = parseFloat(city["Violent Crime"]);
+            let violentCrimeRate = parseFloat(city["Percentage Violent Crime"]);
 
 
             // Define color based on violent crime rate (example ranges, adjust as needed)
