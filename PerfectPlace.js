@@ -83,13 +83,13 @@ function loadFarmersMarkets() {
 }
 
 function loadFastFood() {
-    d3.json("fast_food_unique.json").then(data => {
+    d3.json("fastFood_coord.json").then(data => {
         data.forEach(city => {
-            let lat = parseFloat(city.Latitude);
-            let lon = parseFloat(city.Longitude);
+            let lat = parseFloat(city.latitude);
+            let lon = parseFloat(city.longitude);
             let count = parseInt(city["UniqueFastFoodChains"]);
             if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
-                let radius = count *.5; // Adjust this factor to scale the size of the marker
+                let radius = count *4; // Adjust this factor to scale the size of the marker
                 let marker = L.circleMarker([lat, lon], {
                     radius: radius,
                     fillColor: "#ff7800",
