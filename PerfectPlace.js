@@ -2,7 +2,9 @@ let map;
 
 let allDataLayer = L.layerGroup(); // New layer for all data points
 let farmersMarketLayer = L.layerGroup();
-let crimeRateLayer = L.layerGroup();
+let violentCrimeLayer = L.layerGroup();
+let propertyCrimeLayer = L.layerGroup();
+let colIndexLayer = L.layerGroup();
 let fastFoodLayer = L.layerGroup();
 
 let layers = {
@@ -14,23 +16,69 @@ let layers = {
     "Sun": L.layerGroup(),
     "All Data": allDataLayer,
     "Farmers Markets": farmersMarketLayer,
-    "Crime Rates": crimeRateLayer,
-    "Fast Food (Unique)": fastFoodLayer
+    "Fast Food types": fastFoodLayer,
+    "Cost of Living Index": colIndexLayer,
+    "Violent Crime Rate": violentCrimeLayer,
+    "Property Crime Rate": propertyCrimeLayer
 };
 
-function loadCrimeData() {
-    d3.json("crime_cord.json").then(data => {
+function loadViolentCrimeData() {
+    d3.json("crime_coord.json").then(data => {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
-            let violentCrimeRate = parseFloat(city["Percentage Violent Crime"]);
+            let violentCrimeRate = parseFloat(city["Violent Crime"]);
+            let violentCrimeColor = violentCrimeRate < 200 ? "green" : violentCrimeRate < 400 ? "orange" : "red";
+
+            let violentCrimeMarker = L.circleMarker([lat, lon], {
+                radius: 5,
+                fillColor: violentCrimeColor,
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            }).bindPopup(`<h3>${city.City}, ${city.State}</h3><p>Violent Crime Rate: ${violentCrimeRate}</p>`);
+
+            violentCrimeLayer.addLayer(violentCrimeMarker);
+        });
+    });
+}
+
+function loadPropertyCrimeData() {
+    d3.json("crime_coord.json").then(data => {
+        data.forEach(city => {
+            let lat = parseFloat(city.latitude);
+            let lon = parseFloat(city.longitude);
+            let propertyCrimeRate = parseFloat(city["Property Crime"]);
+            let propertyCrimeColor = propertyCrimeRate < 2000 ? "green" : propertyCrimeRate < 3000 ? "orange" : "red";
+
+            let propertyCrimeMarker = L.circleMarker([lat, lon], {
+                radius: 5,
+                fillColor: propertyCrimeColor,
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            }).bindPopup(`<h3>${city.City}, ${city.State}</h3><p>Property Crime Rate: ${propertyCrimeRate}</p>`);
+
+            propertyCrimeLayer.addLayer(propertyCrimeMarker);
+        });
+    });
+}
+
+function loadCOLIndex() {
+    d3.json("COL_coord.json").then(data => {
+        data.forEach(city => {
+            let lat = parseFloat(city.latitude);
+            let lon = parseFloat(city.longitude);
+            let colIndex = parseFloat(city["Cost of Living Index"]);
 
 
-            // Define color based on violent crime rate (example ranges, adjust as needed)
+            // Define color based on COL index, 100 is average, higher is more expensive.
             let markerColor;
-            if (violentCrimeRate < 200) {
+            if (colIndex < 99) {
                 markerColor = "green";
-            } else if (violentCrimeRate < 400) {
+            } else if (colIndex < 110) {
                 markerColor = "orange";
             } else {
                 markerColor = "red";
@@ -48,26 +96,25 @@ function loadCrimeData() {
 
             // Popup content
             let popupContent = `<h3>${city.City}, ${city.State}</h3>
-                                <p>Population: ${city.Population}</p>
-                                <p>Violent Crime Rate: ${city["Violent Crime"]}</p>
-                                <p>Property Crime Rate: ${city["Property Crime"]}</p>
-                                ...`; // Add more details as needed
+                                <p>Cost of Living Index: ${city["Cost of Living Index"]}</p>
+                                `; // Add more details as needed
 
             marker.bindPopup(popupContent);
             // Add marker to a layer or directly to the map
-            crimeRateLayer.addLayer(marker);
+            colIndexLayer.addLayer(marker);
         });
     });
 }
 
+
 function loadFarmersMarkets() {
-    d3.json("farmers_cord.json").then(data => {
+    d3.json("farmers_coord.json").then(data => {
         data.forEach(market => {
             let lat = parseFloat(market.latitude);
             let lon = parseFloat(market.longitude);
             let count = parseInt(market["Count of State"]);
             if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
-                let radius = count *2; // Adjust this factor to scale the size of the marker
+                let radius = count*.7 ; // Adjust this factor to scale the size of the marker
                 let marker = L.circleMarker([lat, lon], {
                     radius: radius,
                     fillColor: "#ff7800",
@@ -115,8 +162,10 @@ function createMap() {
     streetmap.addTo(map);
     d3.json("chat_sun_rain_data.json").then(createCountyLayers);
     loadFarmersMarkets();
-    loadCrimeData();
+    loadPropertyCrimeData();
+    loadViolentCrimeData();
     loadFastFood();
+    loadCOLIndex();
     L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
 }
 
