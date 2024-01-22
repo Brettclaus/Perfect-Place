@@ -3,6 +3,7 @@ let map;
 let allDataLayer = L.layerGroup(); // New layer for all data points
 let farmersMarketLayer = L.layerGroup();
 let crimeRateLayer = L.layerGroup();
+let fastFoodLayer = L.layerGroup();
 
 let layers = {
     "Housing Cost": L.layerGroup(),
@@ -78,6 +79,28 @@ function loadFarmersMarkets() {
     });
 }
 
+function loadFastFood() {
+    d3.json("fast_food_unique.json").then(data => {
+        data.forEach(city => {
+            let lat = parseFloat(city.Latitude);
+            let lon = parseFloat(city.Longitude);
+            let count = parseInt(city["Count of State"]);
+            if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
+                let radius = count *.5; // Adjust this factor to scale the size of the marker
+                let marker = L.circleMarker([lat, lon], {
+                    radius: radius,
+                    fillColor: "#ff7800",
+                    color: "#000",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).bindPopup(`<h3>${city["Row Labels"]}</h3><p>Number of Unique Fast Food Options: ${count}</p>`);
+                fastFoodLayer.addLayer(marker);
+            }
+        });
+    });
+}
+
 function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -90,7 +113,8 @@ function createMap() {
     d3.json("chat_sun_rain_data.json").then(createCountyLayers);
     loadFarmersMarkets();
     loadCrimeData();
-    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer, "Crime Rates": crimeRateLayer}, { collapsed: false }).addTo(map);
+    loadFastFood();
+    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer, "Crime Rates": crimeRateLayer, "Fast Food (Unique)": fastFoodlayer}, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
