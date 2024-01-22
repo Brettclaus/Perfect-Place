@@ -12,7 +12,10 @@ let layers = {
     "Income": L.layerGroup(),
     "Rain": L.layerGroup(),
     "Sun": L.layerGroup(),
-    "All Data": allDataLayer
+    "All Data": allDataLayer,
+    "Farmers Markets": farmersMarketLayer,
+    "Crime Rates": crimeRateLayer,
+    "Fast Food (Unique)": fastFoodLayer
 };
 
 function loadCrimeData() {
@@ -114,7 +117,7 @@ function createMap() {
     loadFarmersMarkets();
     loadCrimeData();
     loadFastFood();
-    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer, "Crime Rates": crimeRateLayer, "Fast Food (Unique)": fastFoodLayer}, { collapsed: false }).addTo(map);
+    L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
