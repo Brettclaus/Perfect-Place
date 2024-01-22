@@ -28,8 +28,9 @@ Clone the repository: git clone https://github.com/Brettclaus/Perfect-Place.git
 
 Navigate to the project directory: cd perfectplace
 
-Open the index.html file in a web browser.
+Spin up a localhost server by typing this command: python -m http.server
 
+Open web browser to: http://localhost:8000/
 
 Usage
 Use the range sliders to filter data based on different criteria.
