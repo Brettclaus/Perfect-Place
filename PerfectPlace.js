@@ -94,7 +94,7 @@ function loadFastFood() {
                     weight: 1,
                     opacity: 1,
                     fillOpacity: 0.8
-                }).bindPopup(`<h3>${city["Row Labels"]}</h3><p>Number of Unique Fast Food Options: ${count}</p>`);
+                }).bindPopup(`<h3>${city["City"]}</h3><p>Number of Unique Fast Food Options: ${count}</p>`);
                 fastFoodLayer.addLayer(marker);
             }
         });
@@ -114,7 +114,7 @@ function createMap() {
     loadFarmersMarkets();
     loadCrimeData();
     loadFastFood();
-    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer, "Crime Rates": crimeRateLayer, "Fast Food (Unique)": fastFoodlayer}, { collapsed: false }).addTo(map);
+    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer, "Crime Rates": crimeRateLayer, "Fast Food (Unique)": fastFoodLayer}, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
