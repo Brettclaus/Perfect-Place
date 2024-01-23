@@ -414,7 +414,6 @@ function createMap() {
            input.addEventListener('input', updateAllLayers);
        });
    
-       // Initializing the map with layers
-       createMap();
    });
-   
+ // Initializing the map with layers
+createMap();
