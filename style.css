@@ -12,7 +12,8 @@ html, body {
   padding: 20%; /* Some padding around the content */
   text-align: center; /* Center-align text */
   border-bottom: 2px solid #ccc; /* Bottom border for a subtle separation */
-  font-size: 24px; /* Larger text size */
+  font-size: 200px; /* Larger text size */
+  font-family: Arial, sans-serif; /* This sets the font family */
 }
 
 
