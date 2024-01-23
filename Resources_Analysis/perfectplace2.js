@@ -33,7 +33,7 @@ function loadTravelScoreData() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let travelScore = parseFloat(city["Average Travel Score"]);
-       
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Determining marker color based on travel score
             let travelColor = travelScore < 40 ? "red" : travelScore < 60 ? "orange" : "green";
@@ -50,7 +50,7 @@ function loadTravelScoreData() {
 
             // Adding the marker to the travel score layer
             travelScoreLayer.addLayer(travelScoreMarker);
-        
+        }
         });
     });
 }
@@ -63,6 +63,7 @@ function loadViolentCrimeData() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let violentCrimeRate = parseFloat(city["Violent Crime"]);
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Determining marker color based on violent crime rate
             let violentCrimeColor = violentCrimeRate < 200 ? "green" : violentCrimeRate < 400 ? "orange" : "red";
@@ -79,7 +80,7 @@ function loadViolentCrimeData() {
 
             // Adding the marker to the violent crime layer
             violentCrimeLayer.addLayer(violentCrimeMarker);
-        
+        }
         });
     });
 }
@@ -92,6 +93,7 @@ function loadPropertyCrimeData() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let propertyCrimeRate = parseFloat(city["Property Crime"]);
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Determining marker color based on property crime rate
             let propertyCrimeColor = propertyCrimeRate < 2000 ? "green" : propertyCrimeRate < 3000 ? "orange" : "red";
@@ -108,7 +110,7 @@ function loadPropertyCrimeData() {
 
             // Adding the marker to the property crime layer
             propertyCrimeLayer.addLayer(propertyCrimeMarker);
-        
+        }
         });
     });
 }
@@ -121,6 +123,7 @@ function loadCOLIndex() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let colIndex = parseFloat(city["Cost of Living Index"]);
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Determining marker color based on COLI
             let markerColor = colIndex < 99 ? "green" : colIndex < 110 ? "orange" : "red";
@@ -137,7 +140,7 @@ function loadCOLIndex() {
 
             // Adding the marker to the COLI layer
             colIndexLayer.addLayer(marker);
-        
+        }
         });
     });
 }
@@ -202,9 +205,7 @@ function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
-    let artsymap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles © Esri'
-    });
+
     // Initializing the map
     map = L.map("map-id", {
         center: [40.73, -74.0059],
@@ -233,20 +234,19 @@ function createMap() {
         }).addTo(map);
     });
 
-      // Adding the base map layer and initializing other data layers
-      streetmap.addTo(map);
-      d3.json("chat_sun_rain_data.json").then(createCountyLayers);
-      loadFarmersMarkets();
-      loadPropertyCrimeData();
-      loadViolentCrimeData();
-      loadFastFood();
-      loadCOLIndex();
-      loadTravelScoreData();
-      
-         // Adding a layer control to toggle different layers
-          L.control.layers({"Street Map": streetmap, "Topo": artsymap}, layers, { collapsed: false }).addTo(map);
-  }
-  
+    // Adding the base map layer and initializing other data layers
+streetmap.addTo(map);
+d3.json("chat_sun_rain_data.json").then(createCountyLayers);
+       loadFarmersMarkets();
+       loadPropertyCrimeData();
+       loadViolentCrimeData();
+       loadFastFood();
+       loadCOLIndex();
+       loadTravelScoreData();
+   
+       // Adding a layer control to toggle different layers
+       L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
+   }
    
    // Function to create layers based on county data
    function createCountyLayers(response) {
@@ -413,7 +413,7 @@ function createMap() {
        document.querySelectorAll('.filter-section input[type=range]').forEach(input => {
            input.addEventListener('input', updateAllLayers);
        });
-       // Initializing the map with layers
-                createMap();
+   
    });
-         
+ // Initializing the map with layers
+createMap();
