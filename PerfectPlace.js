@@ -33,8 +33,8 @@ function loadTravelScoreData() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let travelScore = parseFloat(city["Average Travel Score"]);
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
-            if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
             // Determining marker color based on travel score
             let travelColor = travelScore < 40 ? "red" : travelScore < 60 ? "orange" : "green";
 
@@ -63,7 +63,7 @@ function loadViolentCrimeData() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let violentCrimeRate = parseFloat(city["Violent Crime"]);
-            if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Determining marker color based on violent crime rate
             let violentCrimeColor = violentCrimeRate < 200 ? "green" : violentCrimeRate < 400 ? "orange" : "red";
@@ -93,7 +93,7 @@ function loadPropertyCrimeData() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let propertyCrimeRate = parseFloat(city["Property Crime"]);
-            if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Determining marker color based on property crime rate
             let propertyCrimeColor = propertyCrimeRate < 2000 ? "green" : propertyCrimeRate < 3000 ? "orange" : "red";
@@ -123,8 +123,7 @@ function loadCOLIndex() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let colIndex = parseFloat(city["Cost of Living Index"]);
-
-            if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Determining marker color based on COLI
             let markerColor = colIndex < 99 ? "green" : colIndex < 110 ? "orange" : "red";
@@ -153,17 +152,17 @@ function loadFarmersMarkets() {
             // Extracting latitude, longitude, and market count
             let lat = parseFloat(market.latitude);
             let lon = parseFloat(market.longitude);
-            let count = parseInt(market["Count of State"]);
-            if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+            let count = parseFloat(market["Count of State"]);
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Creating a marker for each farmers market location
             let marker = L.circleMarker([lat, lon], {
-                radius: count * 7, // Scaling radius based on count
-                fillColor: "#ff7800",
+                radius: count *.5, // Scaling radius based on count
+                fillColor: "green",
                 color: "#000",
                 weight: 1,
                 opacity: 1,
-                fillOpacity: 0.8
+                fillOpacity: 0.7
             }).bindPopup(`<h3>${market["Row Labels"]}</h3><p>Number of Farmers Markets: ${count}</p>`);
 
             // Adding the marker to the farmers market layer
@@ -181,7 +180,7 @@ function loadFastFood() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let count = parseInt(city["UniqueFastFoodChains"]);
-            if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
             // Creating a marker for each fast food location
             let marker = L.circleMarker([lat, lon], {
@@ -190,7 +189,7 @@ function loadFastFood() {
                 color: "#000",
                 weight: 1,
                 opacity: 1,
-                fillOpacity: 0.8
+                fillOpacity: 0.7
             }).bindPopup(`<h3>${city["City"]}</h3><p>Number of Unique Fast Food Options: ${count}</p>`);
 
             // Adding the marker to the fast food layer
@@ -206,7 +205,7 @@ function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
-    let artsymap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+    let artsymap = L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles © Esri'
     });
 
@@ -249,7 +248,7 @@ function createMap() {
        loadTravelScoreData();
    
        // Adding a layer control to toggle different layers
-       L.control.layers({"Street Map": streetmap, "Artsy Map": artsymap}, layers, { collapsed: false }).addTo(map);
+       L.control.layers({"Street Map": streetmap, "Satalite Map": artsymap}, layers, { collapsed: false }).addTo(map);
    }
    
    // Function to create layers based on county data
@@ -258,7 +257,7 @@ function createMap() {
            // Extracting latitude, longitude, and other county data
            let lat = parseFloat(county.latitude);
            let lon = parseFloat(county.longitude);
-           if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
 
            // Creating a popup content for each county
            let facts = county["ChatGPT_Info"];
