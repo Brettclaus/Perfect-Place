@@ -2,11 +2,7 @@ let map;
 
 let allDataLayer = L.layerGroup(); // New layer for all data points
 let farmersMarketLayer = L.layerGroup();
-let violentCrimeLayer = L.layerGroup();
-let propertyCrimeLayer = L.layerGroup();
-let colIndexLayer = L.layerGroup();
-let fastFoodLayer = L.layerGroup();
-let travelScoreLayer = L.layerGroup();
+let crimeRateLayer = L.layerGroup();
 
 let layers = {
     "Housing Cost": L.layerGroup(),
@@ -15,97 +11,22 @@ let layers = {
     "Income": L.layerGroup(),
     "Rain": L.layerGroup(),
     "Sun": L.layerGroup(),
-    "All Data": allDataLayer,
-    "Farmers Markets": farmersMarketLayer,
-    "Fast Food types": fastFoodLayer,
-    "Cost of Living Index": colIndexLayer,
-    "Violent Crime Rate": violentCrimeLayer,
-    "Property Crime Rate": propertyCrimeLayer,
-    "Average Travel Score": travelScoreLayer,
+    "All Data": allDataLayer
 };
 
-
-
-
-function loadTravelScoreData() {
-    d3.json("travel_coord.json").then(data => {
-        data.forEach(city => {
-            let lat = parseFloat(city.latitude);
-            let lon = parseFloat(city.longitude);
-            let travelScore = parseFloat(city["Average Travel Score"]);
-            let travelColor = travelScore < 40 ? "red" : travelScore < 60 ? "orange" : "green";
-
-            let travelScoreMarker = L.circleMarker([lat, lon], {
-                radius: 5,
-                fillColor: travelColor,
-                color: "#000",
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 0.8
-            }).bindPopup(`<h3>${city.City}, ${city.State}</h3><p>Average Travel Score: ${travelScore}</p>`);
-
-            travelScoreLayer.addLayer(travelScoreMarker);
-        });
-    });
-}
-
-function loadViolentCrimeData() {
-    d3.json("crime_coord.json").then(data => {
+function loadCrimeData() {
+    d3.json("crime_cord.json").then(data => {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let violentCrimeRate = parseFloat(city["Violent Crime"]);
-            let violentCrimeColor = violentCrimeRate < 200 ? "green" : violentCrimeRate < 400 ? "orange" : "red";
-
-            let violentCrimeMarker = L.circleMarker([lat, lon], {
-                radius: 5,
-                fillColor: violentCrimeColor,
-                color: "#000",
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 0.8
-            }).bindPopup(`<h3>${city.City}, ${city.State}</h3><p>Violent Crime Rate: ${violentCrimeRate}</p>`);
-
-            violentCrimeLayer.addLayer(violentCrimeMarker);
-        });
-    });
-}
-
-function loadPropertyCrimeData() {
-    d3.json("crime_coord.json").then(data => {
-        data.forEach(city => {
-            let lat = parseFloat(city.latitude);
-            let lon = parseFloat(city.longitude);
-            let propertyCrimeRate = parseFloat(city["Property Crime"]);
-            let propertyCrimeColor = propertyCrimeRate < 2000 ? "green" : propertyCrimeRate < 3000 ? "orange" : "red";
-
-            let propertyCrimeMarker = L.circleMarker([lat, lon], {
-                radius: 5,
-                fillColor: propertyCrimeColor,
-                color: "#000",
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 0.8
-            }).bindPopup(`<h3>${city.City}, ${city.State}</h3><p>Property Crime Rate: ${propertyCrimeRate}</p>`);
-
-            propertyCrimeLayer.addLayer(propertyCrimeMarker);
-        });
-    });
-}
-
-function loadCOLIndex() {
-    d3.json("COL_coord.json").then(data => {
-        data.forEach(city => {
-            let lat = parseFloat(city.latitude);
-            let lon = parseFloat(city.longitude);
-            let colIndex = parseFloat(city["Cost of Living Index"]);
 
 
-            // Define color based on COL index, 100 is average, higher is more expensive.
+            // Define color based on violent crime rate (example ranges, adjust as needed)
             let markerColor;
-            if (colIndex < 99) {
+            if (violentCrimeRate < 200) {
                 markerColor = "green";
-            } else if (colIndex < 110) {
+            } else if (violentCrimeRate < 400) {
                 markerColor = "orange";
             } else {
                 markerColor = "red";
@@ -123,25 +44,26 @@ function loadCOLIndex() {
 
             // Popup content
             let popupContent = `<h3>${city.City}, ${city.State}</h3>
-                                <p>Cost of Living Index: ${city["Cost of Living Index"]}</p>
-                                `; // Add more details as needed
+                                <p>Population: ${city.Population}</p>
+                                <p>Violent Crime Rate: ${city["Violent Crime"]}</p>
+                                <p>Property Crime Rate: ${city["Property Crime"]}</p>
+                                ...`; // Add more details as needed
 
             marker.bindPopup(popupContent);
             // Add marker to a layer or directly to the map
-            colIndexLayer.addLayer(marker);
+            crimeRateLayer.addLayer(marker);
         });
     });
 }
 
-
 function loadFarmersMarkets() {
-    d3.json("farmers_coord.json").then(data => {
+    d3.json("farmers_cord.json").then(data => {
         data.forEach(market => {
             let lat = parseFloat(market.latitude);
             let lon = parseFloat(market.longitude);
             let count = parseInt(market["Count of State"]);
             if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
-                let radius = count*.7 ; // Adjust this factor to scale the size of the marker
+                let radius = count *.5; // Adjust this factor to scale the size of the marker
                 let marker = L.circleMarker([lat, lon], {
                     radius: radius,
                     fillColor: "#ff7800",
@@ -156,70 +78,19 @@ function loadFarmersMarkets() {
     });
 }
 
-function loadFastFood() {
-    d3.json("fastFood_coord.json").then(data => {
-        data.forEach(city => {
-            let lat = parseFloat(city.latitude);
-            let lon = parseFloat(city.longitude);
-            let count = parseInt(city["UniqueFastFoodChains"]);
-            if (!isNaN(lat) && !isNaN(lon) && !isNaN(count)) {
-                let radius = count *2; // Adjust this factor to scale the size of the marker
-                let marker = L.circleMarker([lat, lon], {
-                    radius: radius,
-                    fillColor: "#ff7800",
-                    color: "#000",
-                    weight: 1,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                }).bindPopup(`<h3>${city["City"]}</h3><p>Number of Unique Fast Food Options: ${count}</p>`);
-                fastFoodLayer.addLayer(marker);
-            }
-        });
-    });
-}
-
 function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
-    let artsymap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles © Esri'
-    });
-
     map = L.map("map-id", {
         center: [40.73, -74.0059],
         zoom: 4
     });
-
-    fetch('Full_AT.json')
-    .then(response => response.json())
-    .then(data => {
-        L.geoJSON(data, {
-            style: function (feature) {
-                return {color: "#008000"};
-            }
-        }).addTo(map);
-    });
-
-    fetch('Full_PCT.geojson')
-    .then(response => response.json())
-    .then(data => {
-        L.geoJSON(data, {
-            style: function (feature) {
-                return {color: "#008000"};
-            }
-        }).addTo(map);
-    });
-
     streetmap.addTo(map);
     d3.json("chat_sun_rain_data.json").then(createCountyLayers);
     loadFarmersMarkets();
-    loadPropertyCrimeData();
-    loadViolentCrimeData();
-    loadFastFood();
-    loadCOLIndex();
-    loadTravelScoreData();
-    L.control.layers({"Street Map": streetmap, "other": artsymap}, layers, { collapsed: false }).addTo(map);
+    loadCrimeData();
+    L.control.layers({"Street Map": streetmap}, {...layers, "Farmers Markets": farmersMarketLayer, "Crime Rates": crimeRateLayer}, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
@@ -355,8 +226,69 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener('input', updateAllLayers);
     });
 
-
-    
+    createMap(); // Initialize the map and layers
 });
+/*document.addEventListener('DOMContentLoaded', function() {
+    // Event listeners for Housing Cost filter
+    document.getElementById('minHousingCostRange').addEventListener('input', function() {
+        updateRangeFilter('Housing Cost', 'minHousingCostRange', 'maxHousingCostRange');
+        applyAllFilters();
+    });
+    document.getElementById('maxHousingCostRange').addEventListener('input', function() {
+        updateRangeFilter('Housing Cost', 'minHousingCostRange', 'maxHousingCostRange');
+        applyAllFilters();
+    });
 
-createMap(); // Initialize the map and layers
+    // Event listeners for Food Cost filter
+    document.getElementById('minFoodCostRange').addEventListener('input', function() {
+        updateRangeFilter('Food Cost', 'minFoodCostRange', 'maxFoodCostRange');
+        applyAllFilters();
+    });
+    document.getElementById('maxFoodCostRange').addEventListener('input', function() {
+        updateRangeFilter('Food Cost', 'minFoodCostRange', 'maxFoodCostRange');
+        applyAllFilters();
+    });
+
+    // Event listeners for Tax Rate filter
+    document.getElementById('minTaxRateRange').addEventListener('input', function() {
+        updateRangeFilter('Tax Rate', 'minTaxRateRange', 'maxTaxRateRange');
+        applyAllFilters();
+    });
+    document.getElementById('maxTaxRateRange').addEventListener('input', function() {
+        updateRangeFilter('Tax Rate', 'minTaxRateRange', 'maxTaxRateRange');
+        applyAllFilters();
+    });
+
+    // Event listeners for Income filter
+    document.getElementById('minIncomeRange').addEventListener('input', function() {
+        updateRangeFilter('Income', 'minIncomeRange', 'maxIncomeRange');
+        applyAllFilters();
+    });
+    document.getElementById('maxIncomeRange').addEventListener('input', function() {
+        updateRangeFilter('Income', 'minIncomeRange', 'maxIncomeRange');
+        applyAllFilters();
+    });
+
+    // Event listeners for Rain filter
+    document.getElementById('minRainRange').addEventListener('input', function() {
+        updateRangeFilter('Rain', 'minRainRange', 'maxRainRange');
+        applyAllFilters();
+    });
+    document.getElementById('maxRainRange').addEventListener('input', function() {
+        updateRangeFilter('Rain', 'minRainRange', 'maxRainRange');
+        applyAllFilters();
+    });
+
+    // Event listeners for Sun filter
+    document.getElementById('minSunRange').addEventListener('input', function() {
+        updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
+        applyAllFilters();
+    });
+    document.getElementById('maxSunRange').addEventListener('input', function() {
+        updateRangeFilter('Sun', 'minSunRange', 'maxSunRange');
+        applyAllFilters();
+    });
+
+    createMap(); // Initialize the map and layers
+});*/
+
