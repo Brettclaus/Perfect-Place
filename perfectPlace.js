@@ -356,6 +356,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    createMap(); // Initialize the map and layers
+    
 });
 
+createMap(); // Initialize the map and layers
