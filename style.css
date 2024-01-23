@@ -9,10 +9,10 @@ html, body {
 #headerBox {
   background-color: #be1e1e; /* Light grey background */
   color: #dc0d0d; /* Dark text color */
-  padding: 20%; /* Some padding around the content */
+  padding: 0%; /* Some padding around the content */
   text-align: center; /* Center-align text */
   border-bottom: 2px solid #ccc; /* Bottom border for a subtle separation */
-  font-size: 200px; /* Larger text size */
+  font-size: 20px; /* Larger text size */
   font-family: Arial, sans-serif; /* This sets the font family */
 }
 
