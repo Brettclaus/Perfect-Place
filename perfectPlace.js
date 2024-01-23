@@ -219,7 +219,7 @@ function createMap() {
     loadFastFood();
     loadCOLIndex();
     loadTravelScoreData();
-    L.control.layers({"Street Map": streetmap, "Terrain": artsymap}, layers, { collapsed: false }).addTo(map);
+    L.control.layers({"Street Map": streetmap, "other": artsymap}, layers, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
