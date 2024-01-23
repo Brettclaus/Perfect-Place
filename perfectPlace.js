@@ -238,7 +238,7 @@ function createMap() {
 
       // Adding the base map layer and initializing other data layers
       streetmap.addTo(map);
-      d3.json("chat_sun_rain_data.json").then(createCountyLayers);
+      d3.json("/Geographic_Data/chat_sun_rain_data.json").then(createCountyLayers);
       loadFarmersMarkets();
       loadPropertyCrimeData();
       loadViolentCrimeData();
