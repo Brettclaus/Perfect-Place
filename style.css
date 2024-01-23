@@ -6,15 +6,6 @@ html, body {
   flex-direction: column; /* Align children (map and filters) in a column */
 }
 
-#headerBox {
-  background-color:transparent; /* Light grey background */
-  color: #000000; /* Dark text color */
-  padding: 20px; /* Some padding around the content */
-  text-align: center; /* Center-align text */
-  border-bottom: 2px solid #ccc; /* Bottom border for a subtle separation */
-  font-size: 20px; /* Larger text size */
-  font-family: Arial, sans-serif; /* This sets the font family */
-}
 
 
 #map-id {

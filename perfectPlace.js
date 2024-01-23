@@ -359,8 +359,3 @@ document.addEventListener('DOMContentLoaded', function() {
     createMap(); // Initialize the map and layers
 });
 
-    // event listner for headerbox
-    document.addEventListener('DOMContentLoaded', () => {
-        const headerBox = document.getElementById('headerBox');
-        headerBox.textContent = 'Find your Perfect Place'; // Set the text content
-    });
