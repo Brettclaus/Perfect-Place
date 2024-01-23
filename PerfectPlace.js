@@ -213,7 +213,7 @@ function createMap() {
     });
 
     // Loading Appalachian Trail data as a geoJSON layer
-    /*fetch('Full_AT.json')
+    fetch('Full_AT.json')
     .then(response => response.json())
     .then(data => {
         L.geoJSON(data, {
@@ -232,7 +232,7 @@ function createMap() {
                 return {color: "#008000"};
             }
         }).addTo(map);
-    });*/
+    });
 
        // Adding the base map layer and initializing other data layers
        streetmap.addTo(map);
