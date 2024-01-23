@@ -11,19 +11,20 @@ html, body {
   width: 100%; /* Ensure full width */
 }
 
+
 .filter-container {
   width: 100%; /* Full width of the container */
   display: flex;
   flex-direction: row; /* Stack elements vertically */
   align-items: center; /* Center align the items */
-  padding-bottom: 20px; /* Add some padding at the bottom */
+  align-items: stretch;
 }
 
 .filter-section {
   width: 80%; /* Adjust width to fit within the screen */
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #f4f4f4;
+  background-color: transparent;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 

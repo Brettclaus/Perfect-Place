@@ -27,7 +27,7 @@ let layers = {
 
 // Function to load travel score data and add to the map
 function loadTravelScoreData() {
-    d3.json("travel_coord.json").then(data => {
+    d3.json("/Geographic_Data/travel_coord.json").then(data => {
         data.forEach(city => {
             // Extracting latitude, longitude, and travel score
             let lat = parseFloat(city.latitude);
@@ -57,7 +57,7 @@ function loadTravelScoreData() {
 
 // Function to load violent crime data and add to the map
 function loadViolentCrimeData() {
-    d3.json("crime_coord.json").then(data => {
+    d3.json("/Geographic_Data/crime_coord.json").then(data => {
         data.forEach(city => {
             // Extracting latitude, longitude, and violent crime rate
             let lat = parseFloat(city.latitude);
@@ -87,7 +87,7 @@ function loadViolentCrimeData() {
 
 // Function to load property crime data and add to the map
 function loadPropertyCrimeData() {
-    d3.json("crime_coord.json").then(data => {
+    d3.json("/Geographic_Data/crime_coord.json").then(data => {
         data.forEach(city => {
             // Extracting latitude, longitude, and property crime rate
             let lat = parseFloat(city.latitude);
@@ -117,7 +117,7 @@ function loadPropertyCrimeData() {
 
 // Function to load Cost of Living Index (COLI) data and add to the map
 function loadCOLIndex() {
-    d3.json("COL_coord.json").then(data => {
+    d3.json("/Geographic_Data/COL_coord.json").then(data => {
         data.forEach(city => {
             // Extracting latitude, longitude, and COLI
             let lat = parseFloat(city.latitude);
@@ -147,7 +147,7 @@ function loadCOLIndex() {
 
 // Function to load farmers market data and add to the map
 function loadFarmersMarkets() {
-    d3.json("farmers_coord.json").then(data => {
+    d3.json("/Geographic_Data/farmers_coord.json").then(data => {
         data.forEach(market => {
             // Extracting latitude, longitude, and market count
             let lat = parseFloat(market.latitude);
@@ -174,7 +174,7 @@ function loadFarmersMarkets() {
 
 // Function to load fast food data and add to the map
 function loadFastFood() {
-    d3.json("fastFood_coord.json").then(data => {
+    d3.json("/Geographic_Data/fastFood_coord.json").then(data => {
         data.forEach(city => {
             // Extracting latitude, longitude, and fast food chain count
             let lat = parseFloat(city.latitude);
@@ -205,7 +205,9 @@ function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
-
+    let artsymap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles © Esri'
+    });
     // Initializing the map
     map = L.map("map-id", {
         center: [40.73, -74.0059],
@@ -213,7 +215,7 @@ function createMap() {
     });
 
     // Loading Appalachian Trail data as a geoJSON layer
-    fetch('Full_AT.json')
+    fetch('/Geographic_Data/Full_AT.json')
     .then(response => response.json())
     .then(data => {
         L.geoJSON(data, {
@@ -224,7 +226,7 @@ function createMap() {
     });
 
     // Loading Pacific Crest Trail data as a geoJSON layer
-    fetch('Full_PCT.geojson')
+    fetch('/Geographic_Data/Full_PCT.geojson')
     .then(response => response.json())
     .then(data => {
         L.geoJSON(data, {
@@ -234,19 +236,20 @@ function createMap() {
         }).addTo(map);
     });
 
-       // Adding the base map layer and initializing other data layers
-       streetmap.addTo(map);
-       d3.json("chat_sun_rain_data.json").then(createCountyLayers);
-       loadFarmersMarkets();
-       loadPropertyCrimeData();
-       loadViolentCrimeData();
-       loadFastFood();
-       loadCOLIndex();
-       loadTravelScoreData();
-   
-       // Adding a layer control to toggle different layers
-       L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
-   }
+      // Adding the base map layer and initializing other data layers
+      streetmap.addTo(map);
+      d3.json("chat_sun_rain_data.json").then(createCountyLayers);
+      loadFarmersMarkets();
+      loadPropertyCrimeData();
+      loadViolentCrimeData();
+      loadFastFood();
+      loadCOLIndex();
+      loadTravelScoreData();
+      
+         // Adding a layer control to toggle different layers
+          L.control.layers({"Street Map": streetmap, "Topo": artsymap}, layers, { collapsed: false }).addTo(map);
+  }
+  
    
    // Function to create layers based on county data
    function createCountyLayers(response) {
@@ -413,7 +416,7 @@ function createMap() {
        document.querySelectorAll('.filter-section input[type=range]').forEach(input => {
            input.addEventListener('input', updateAllLayers);
        });
-   
+       // Initializing the map with layers
+                createMap();
    });
- // Initializing the map with layers
-createMap();
+         
