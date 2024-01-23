@@ -191,7 +191,7 @@ function createMap() {
         zoom: 4
     });
 
-    /*fetch('Full_AT.json')
+    fetch('Full_AT.json')
     .then(response => response.json())
     .then(data => {
         L.geoJSON(data, {
@@ -210,7 +210,7 @@ function createMap() {
             }
         }).addTo(map);
     });
-*/
+
     streetmap.addTo(map);
     d3.json("chat_sun_rain_data.json").then(createCountyLayers);
     loadFarmersMarkets();
