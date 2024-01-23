@@ -33,7 +33,7 @@ function loadTravelScoreData() {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
             let travelScore = parseFloat(city["Average Travel Score"]);
-        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+       
 
             // Determining marker color based on travel score
             let travelColor = travelScore < 40 ? "red" : travelScore < 60 ? "orange" : "green";
@@ -50,7 +50,7 @@ function loadTravelScoreData() {
 
             // Adding the marker to the travel score layer
             travelScoreLayer.addLayer(travelScoreMarker);
-        }
+        
         });
     });
 }
