@@ -205,7 +205,10 @@ function createMap() {
     let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
-    let artsymap = L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    let satmap = L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles © Esri'
+    });
+    let darkmap = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
         attribution: 'Tiles © Esri'
     });
 
@@ -248,7 +251,7 @@ function createMap() {
        loadTravelScoreData();
    
        // Adding a layer control to toggle different layers
-       L.control.layers({"Street Map": streetmap, "Satalite Map": artsymap}, layers, { collapsed: false }).addTo(map);
+       L.control.layers({"Street Map": streetmap, "Satalite Map": satmap, "Dark Map": darkmap}, layers, { collapsed: false }).addTo(map);
    }
    
    // Function to create layers based on county data
