@@ -7,9 +7,9 @@ html, body {
 }
 
 #headerBox {
-  background-color: #f4f4f4; /* Light grey background */
-  color: #333; /* Dark text color */
-  padding: 20px; /* Some padding around the content */
+  background-color: #be1e1e; /* Light grey background */
+  color: #dc0d0d; /* Dark text color */
+  padding: 20%; /* Some padding around the content */
   text-align: center; /* Center-align text */
   border-bottom: 2px solid #ccc; /* Bottom border for a subtle separation */
   font-size: 24px; /* Larger text size */
@@ -38,7 +38,16 @@ html, body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.filter-section label,
+
+.filter-section label {
+  font-family: Arial, sans-serif; /* This sets the font family */
+    /* You can also specify other font properties if needed */
+}
+  
+
+
+
+
 .filter-section span {
   display: block;
   margin-bottom: 5px;
