@@ -219,7 +219,7 @@ function createMap() {
     });
 
     // Loading Appalachian Trail data as a geoJSON layer
-    fetch('Full_AT.json')
+    /*fetch('Full_AT.json')
     .then(response => response.json())
     .then(data => {
         L.geoJSON(data, {
@@ -238,7 +238,7 @@ function createMap() {
                 return {color: "#008000"};
             }
         }).addTo(map);
-    });
+    });*/
 
        // Adding the base map layer and initializing other data layers
        streetmap.addTo(map);
@@ -251,7 +251,7 @@ function createMap() {
        loadTravelScoreData();
    
        // Adding a layer control to toggle different layers
-       L.control.layers({"Street Map": streetmap, "Satalite Map": satmap, "Dark Map": darkmap}, layers, { collapsed: false }).addTo(map);
+       L.control.layers({"Street Map": streetmap}, layers, { collapsed: false }).addTo(map);
    }
    
    // Function to create layers based on county data
