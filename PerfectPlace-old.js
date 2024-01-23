@@ -1,5 +1,6 @@
-let map;
+// Initialize global variables for map and layer groups
 
+let map;
 let allDataLayer = L.layerGroup(); // New layer for all data points
 let farmersMarketLayer = L.layerGroup();
 let violentCrimeLayer = L.layerGroup();
@@ -28,7 +29,7 @@ let layers = {
 
 
 function loadTravelScoreData() {
-    d3.json("travel_coord.json").then(data => {
+    d3.json("/Geographic_Data/travel_coord.json").then(data => {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
@@ -50,7 +51,7 @@ function loadTravelScoreData() {
 }
 
 function loadViolentCrimeData() {
-    d3.json("crime_coord.json").then(data => {
+    d3.json("/Geographic_Data/crime_coord.json").then(data => {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
@@ -72,7 +73,7 @@ function loadViolentCrimeData() {
 }
 
 function loadPropertyCrimeData() {
-    d3.json("crime_coord.json").then(data => {
+    d3.json("/Geographic_Data/crime_coord.json").then(data => {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
@@ -94,7 +95,7 @@ function loadPropertyCrimeData() {
 }
 
 function loadCOLIndex() {
-    d3.json("COL_coord.json").then(data => {
+    d3.json("/Geographic_Data/COL_coord.json").then(data => {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
@@ -135,7 +136,7 @@ function loadCOLIndex() {
 
 
 function loadFarmersMarkets() {
-    d3.json("farmers_coord.json").then(data => {
+    d3.json("/Geographic_Data/farmers_coord.json").then(data => {
         data.forEach(market => {
             let lat = parseFloat(market.latitude);
             let lon = parseFloat(market.longitude);
@@ -157,7 +158,7 @@ function loadFarmersMarkets() {
 }
 
 function loadFastFood() {
-    d3.json("fastFood_coord.json").then(data => {
+    d3.json("/Geographic_Data/fastFood_coord.json").then(data => {
         data.forEach(city => {
             let lat = parseFloat(city.latitude);
             let lon = parseFloat(city.longitude);
@@ -191,7 +192,7 @@ function createMap() {
         zoom: 4
     });
 
-    fetch('Full_AT.json')
+    fetch('/Geographic_Data/Full_AT.json')
     .then(response => response.json())
     .then(data => {
         L.geoJSON(data, {
@@ -201,7 +202,7 @@ function createMap() {
         }).addTo(map);
     });
 
-    fetch('Full_PCT.geojson')
+    fetch('/Geographic_Data/Full_PCT.geojson')
     .then(response => response.json())
     .then(data => {
         L.geoJSON(data, {
@@ -211,15 +212,18 @@ function createMap() {
         }).addTo(map);
     });
 
+       // Adding the base map layer and initializing other data layers
     streetmap.addTo(map);
-    d3.json("chat_sun_rain_data.json").then(createCountyLayers);
+    d3.json("/Geographic_Data/chat_sun_rain_data.json").then(createCountyLayers);
     loadFarmersMarkets();
     loadPropertyCrimeData();
     loadViolentCrimeData();
     loadFastFood();
     loadCOLIndex();
     loadTravelScoreData();
-    L.control.layers({"Street Map": streetmap, "other": artsymap}, layers, { collapsed: false }).addTo(map);
+    
+       // Adding a layer control to toggle different layers
+        L.control.layers({"Street Map": streetmap, "other": artsymap}, layers, { collapsed: false }).addTo(map);
 }
 
 function createCountyLayers(response) {
