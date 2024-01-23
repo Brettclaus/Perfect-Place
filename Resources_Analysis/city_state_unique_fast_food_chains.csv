@@ -1,0 +1,3362 @@
+City,State,UniqueFastFoodChains
+Aberdeen,MD,1
+Aberdeen,NC,2
+Aberdeen,SD,1
+Aberdeen,WA,2
+Abilene,TX,4
+Abingdon,VA,2
+Abington,PA,1
+Acton,MA,2
+Acworth,GA,5
+Ada,OK,3
+Adairsville,GA,2
+Adel,GA,1
+Adrian,MI,2
+Afton,WY,1
+Agawam,MA,1
+Agoura Hills,CA,2
+Aiken,SC,2
+Akron,OH,9
+Alameda,CA,3
+Alamogordo,NM,2
+Albany,CA,2
+Albany,GA,6
+Albany,NY,3
+Albany,OR,3
+Albert Lea,MN,3
+Albertville,MN,1
+Albion,MI,1
+Albion,NE,1
+Albuquerque,NM,18
+Alden,NY,1
+Aledo,IL,1
+Alexandria,LA,4
+Alexandria,MN,3
+Alexandria,VA,4
+Algona,IA,1
+Algonquin,IL,1
+Alhambra,CA,5
+Alice,TX,1
+Aliquippa,PA,1
+Allen,TX,4
+Allen Park,MI,1
+Allendale,MI,2
+Allendale,SC,1
+Allentown,PA,6
+Alliance,NE,2
+Alliance,OH,2
+Allison Park,PA,2
+Allston,MA,1
+Alma,MI,1
+Alpena,MI,2
+Alpharetta,GA,4
+Alpine,CA,1
+Altadena,CA,3
+Altamonte Springs,FL,1
+Alto,GA,1
+Altoona,PA,4
+Alturas,CA,1
+Alvin,TX,2
+Amarillo,TX,4
+Amelia,OH,3
+American Canyon,CA,1
+American Fork,UT,1
+Americus,GA,2
+Ames,IA,7
+Amite,LA,1
+Amityville,NY,1
+Amory,MS,1
+Anaheim,CA,9
+Anchorage,AK,5
+Anderson,IN,2
+Anderson,SC,6
+Andover,KS,2
+Andover,MN,1
+Angleton,TX,1
+Angola,IN,1
+Ankeny,IA,7
+Ann Arbor,MI,3
+Annandale,VA,1
+Annapolis,MD,2
+Anoka,MN,1
+Antelope,CA,1
+Antioch,CA,3
+Antioch,TN,1
+Apache Junction,AZ,2
+Apex,NC,1
+Apopka,FL,3
+Apple Valley,CA,1
+Appleton,WI,2
+Arapahoe,NE,1
+Arcade,NY,1
+Arcadia,CA,3
+Arcadia,FL,1
+Arcadia,LA,1
+Arcata,CA,1
+Ardmore,OK,2
+Ardmore,PA,1
+Arkadelphia,AR,1
+Arkansas City,KS,1
+Arlington,MA,3
+Arlington,TN,2
+Arlington,TX,7
+Arlington,VA,5
+Arlington Heights,IL,1
+Arnold,MO,5
+Arroyo Grande,CA,1
+Artesia,CA,2
+Arvada,CO,5
+Ashdown,AR,1
+Asheboro,NC,3
+Asheville,NC,3
+Ashland,KY,4
+Ashland,MO,1
+Ashland,OH,2
+Ashland,OR,1
+Astoria,NY,1
+Astoria,OR,2
+Atascadero,CA,2
+Athens,GA,6
+Athens,OH,2
+Athens,TN,1
+Athens,TX,1
+Atlanta,GA,17
+Atlanta,TX,2
+Atlantic Beach,FL,1
+Atoka,OK,1
+Attleboro,MA,1
+Auburn,CA,2
+Auburn,IN,3
+Auburn,MI,1
+Auburn,NE,1
+Auburn,NY,1
+Auburn,WA,3
+Auburn Hills,MI,2
+Auburndale,FL,3
+Augusta,GA,9
+Augusta,ME,5
+Aurora,CO,11
+Aurora,IL,5
+Aurora,IN,1
+Aurora,OH,2
+Austell,GA,1
+Austin,MN,2
+Austin,TX,15
+Avon,IN,2
+Avon,MN,1
+Avon Lake,OH,1
+Avon Park,FL,1
+Avondale,AZ,8
+Aynor,SC,2
+Azle,TX,1
+Aztec,NM,1
+Azusa,CA,5
+Bad Axe,MI,1
+Baker,CA,1
+Baker,LA,1
+Bakersfield,CA,8
+Baldwin,NY,2
+Baldwin Park,CA,4
+Ballwin,MO,1
+Baltimore,MD,3
+Bangor,ME,2
+Barberton,OH,1
+Barbourville,KY,1
+Barnesville,GA,2
+Barstow,CA,3
+Bartlesville,OK,1
+Bartlett,IL,1
+Bartow,FL,2
+Bastrop,LA,1
+Bastrop,TX,1
+Batavia,OH,3
+Batesville,IN,2
+Bath,ME,1
+Baton Rouge,LA,11
+Battle Creek,MI,6
+Battleboro,NC,1
+Baxter,MN,1
+Bay City,MI,4
+Bay City,TX,1
+Bay Saint Louis,MS,1
+Bay Shore,NY,2
+Bayard,NM,1
+Baytown,TX,3
+Bear,DE,4
+Beatrice,NE,1
+Beaufort,SC,3
+Beaumont,CA,2
+Beaumont,TX,2
+Beaver Dam,WI,2
+Beaver Falls,PA,1
+Beaverton,OR,6
+Becker,MN,1
+Beckley,WV,5
+Bedford,IN,2
+Bedford,MA,1
+Bedford,OH,1
+Bedford,TX,3
+Bedford,VA,3
+Beech Grove,IN,1
+Beeville,TX,1
+Bel Air,MD,3
+Belcamp,MD,1
+Belen,NM,1
+Belfast,ME,1
+Belgium,WI,1
+Bell Gardens,CA,1
+Bella Vista,AR,1
+Bellaire,TX,1
+Belle Glade,FL,2
+Belle Vernon,PA,3
+Bellefontaine,OH,2
+Belleville,IL,5
+Bellevue,NE,1
+Bellevue,WA,2
+Bellflower,CA,4
+Bellingham,WA,2
+Bellmore,NY,1
+Belmar,NJ,1
+Belmont,CA,1
+Belmont,NC,1
+Beloit,WI,2
+Belton,MO,1
+Belton,SC,1
+Beltsville,MD,1
+Belvidere,IL,1
+Bend,OR,3
+Benicia,CA,1
+Bensalem,PA,1
+Bentleyville,PA,1
+Benton,AR,1
+Benton,KY,1
+Bentonville,AR,5
+Berea,KY,2
+Bergenfield,NJ,1
+Berkeley,CA,1
+Berlin,MD,2
+Berlin,PA,1
+Berwick,PA,1
+Berwyn,IL,2
+Bethalto,IL,2
+Bethel Park,PA,2
+Bethesda,MD,2
+Bethlehem,PA,5
+Bettendorf,IA,2
+Beverly,MA,2
+Biddeford,ME,1
+Big Bear Lake,CA,1
+Big Rapids,MI,2
+Big Spring,TX,1
+Billings,MT,3
+Biloxi,MS,2
+Binghamton,NY,3
+Birch Run,MI,1
+Birmingham,AL,2
+Bishop,CA,1
+Bishopville,SC,1
+Bismarck,ND,3
+Bixby,OK,1
+Black Mountain,NC,2
+Blackfoot,ID,3
+Blacklick,OH,1
+Blackwell,OK,1
+Blackwood,NJ,1
+Bladenboro,NC,1
+Blair,NE,1
+Bloomington,IL,1
+Bloomington,IN,4
+Bloomsburg,PA,3
+Blountville,TN,2
+Blue Earth,MN,1
+Blue Ridge,GA,1
+Blue Springs,MO,3
+Bluefield,WV,1
+Bluffton,IN,1
+Blytheville,AR,1
+Blythewood,SC,1
+Boca Raton,FL,4
+Boerne,TX,1
+Bogalusa,LA,1
+Boiling Springs,SC,3
+Boise,ID,7
+Bolingbrook,IL,2
+Bolivar,TN,1
+Bonaire,GA,1
+Bonham,TX,2
+Bonifay,FL,1
+Bonita,CA,1
+Bonner Springs,KS,1
+Boone,NC,3
+Boonville,IN,1
+Boonville,MO,1
+Borger,TX,2
+Bossier City,LA,4
+Boston,MA,15
+Boulder,CO,3
+Boulder City,NV,1
+Bound Brook,NJ,1
+Bourbonnais,IL,4
+Bowdon,GA,1
+Bowie,TX,1
+Bowling Green,KY,4
+Bowling Green,MO,1
+Boynton Beach,FL,2
+Bozeman,MT,3
+Bradenton,FL,4
+Bradford,PA,3
+Bradley,IL,2
+Braidwood,IL,1
+Brainerd,MN,1
+Braintree,MA,1
+Brandon,FL,4
+Brandon,MS,1
+Branson,MO,2
+Brawley,CA,1
+Brazil,IN,1
+Brazoria,TX,1
+Brea,CA,3
+Breese,IL,1
+Breezewood,PA,1
+Breinigsville,PA,1
+Bremen,IN,1
+Brentwood,TN,1
+Brick,NJ,2
+Bridge City,TX,1
+Bridgeport,CT,3
+Bridgeport,MI,1
+Bridgeport,WV,1
+Bridgeton,MO,3
+Bridgeton,NJ,1
+Bridgeview,IL,1
+Bridgeville,PA,3
+Bridgewater,MA,1
+Bridgman,MI,2
+Brigham City,UT,1
+Brighton,CO,4
+Brighton,MA,1
+Brighton,MI,1
+Brinkley,AR,1
+Bristol,CT,1
+Bristol,PA,1
+Bristol,TN,2
+Bristol,WI,1
+Bristow,OK,1
+Broadview Heights,OH,1
+Brockton,MA,4
+Broken Arrow,OK,1
+Broken Bow,OK,1
+Bronx,NY,7
+Brookfield,WI,2
+Brookhaven,MS,2
+Brookhaven,PA,3
+Brookings,SD,6
+Brookline,MA,1
+Brooklyn,NY,16
+Brookshire,TX,1
+Brooksville,FL,3
+Brookville,OH,1
+Brookville,PA,1
+Broomfield,CO,3
+Broussard,LA,1
+Brownsburg,IN,3
+Brownsville,TN,1
+Brownsville,TX,3
+Brunswick,GA,1
+Brunswick,OH,3
+Brush,CO,1
+Bryan,OH,1
+Bryan,TX,3
+Bryant,AR,3
+Bryson City,NC,1
+Buckeye,AZ,3
+Buckhannon,WV,2
+Bucyrus,OH,3
+Buda,TX,1
+Budd Lake,NJ,1
+Buellton,CA,1
+Buena Park,CA,4
+Buffalo,NY,4
+Buford,GA,3
+Bulls Gap,TN,1
+Buna,TX,1
+Burbank,CA,5
+Burbank,IL,2
+Burbank,OH,1
+Burkburnett,TX,1
+Burke,VA,2
+Burleson,TX,4
+Burley,ID,1
+Burlingame,CA,1
+Burlington,CO,1
+Burlington,IA,1
+Burlington,MA,1
+Burlington,NC,3
+Burlington,NJ,1
+Burlington,VT,2
+Burlington,WA,1
+Burnham,PA,1
+Burnsville,MN,4
+Burton,MI,1
+Bushnell,FL,1
+Butler,MO,1
+Butler,PA,2
+Butte,MT,1
+Byesville,OH,1
+Byron,MN,1
+Cabot,AR,2
+Cadillac,MI,2
+Caldwell,ID,2
+Caldwell,WV,1
+Calera,OK,1
+Calhan,CO,1
+Calhoun,GA,2
+Calhoun City,MS,1
+Calimesa,CA,2
+Calumet City,IL,1
+Camarillo,CA,1
+Cambridge,MA,6
+Cambridge,MD,1
+Cambridge,MN,2
+Cambridge,OH,2
+Camby,IN,2
+Camden,NJ,2
+Camden,SC,1
+Camden,TN,1
+Cameron,NC,2
+Cameron,TX,1
+Camp Hill,PA,2
+Camp Verde,AZ,1
+Campbell,CA,5
+Campbellsville,KY,2
+Canal Winchester,OH,1
+Canby,OR,1
+Candler,NC,2
+Canoga Park,CA,4
+Canonsburg,PA,7
+Canton,GA,2
+Canton,MI,3
+Canton,NC,1
+Canton,OH,10
+Canton,TX,2
+Cantonment,FL,1
+Canyon,TX,2
+Canyon Country,CA,4
+Cape Canaveral,FL,1
+Cape Coral,FL,2
+Cape Girardeau,MO,3
+Cape May Court House,NJ,1
+Capitol Heights,MD,2
+Capitola,CA,1
+Carbondale,PA,1
+Caribou,ME,1
+Carlisle,PA,1
+Carlsbad,CA,2
+Carlsbad,NM,3
+Carmel,IN,4
+Carmichael,CA,3
+Carnegie,PA,1
+Carpentersville,IL,3
+Carrizo Springs,TX,1
+Carrollton,GA,2
+Carrollton,TX,6
+Carrollton,VA,1
+Carson,CA,4
+Carson City,NV,3
+Cartersville,GA,4
+Carthage,NC,1
+Cary,IL,3
+Cary,NC,3
+Casa Grande,AZ,1
+Casper,WY,2
+Castle Rock,CO,3
+Castro Valley,CA,5
+Catlettsburg,KY,1
+Catonsville,MD,5
+Catoosa,OK,1
+Cave City,KY,1
+Cave Creek,AZ,3
+Cedar City,UT,1
+Cedar Falls,IA,1
+Cedar Hill,TX,1
+Cedar Knolls,NJ,1
+Cedar Park,TX,3
+Cedar Rapids,IA,7
+Cedar Springs,MI,2
+Cedarburg,WI,1
+Cedartown,GA,2
+Centereach,NY,3
+Centerville,GA,1
+Central,SC,1
+Central City,KY,1
+Central City,PA,1
+Central Islip,NY,1
+Centralia,IL,2
+Centralia,WA,1
+Centreville,MI,1
+Ceres,CA,1
+Cerritos,CA,2
+Chadbourn,NC,1
+Chadron,NE,2
+Chalfont,PA,1
+Chamberlain,SD,1
+Chambersburg,PA,3
+Champaign,IL,3
+Champlin,MN,1
+Chandler,AZ,11
+Chanhassen,MN,2
+Chantilly,VA,3
+Chapel Hill,NC,6
+Chardon,OH,1
+Charles Town,WV,1
+Charleston,SC,7
+Charleston,WV,2
+Charlestown,MA,1
+Charlevoix,MI,1
+Charlotte,NC,10
+Charlottesville,VA,6
+Chaska,MN,1
+Chatsworth,CA,1
+Chatsworth,GA,1
+Chattahoochee,FL,1
+Chattanooga,TN,12
+Checotah,OK,1
+Chehalis,WA,1
+Chelmsford,MA,2
+Chelsea,MA,2
+Chesapeake,VA,3
+Cheshire,CT,2
+Chester,MD,1
+Chester,NY,1
+Chesterfield,MO,3
+Chesterton,IN,2
+Chestertown,MD,2
+Chetek,WI,1
+Cheyenne,WY,5
+Chicago,IL,23
+Chicago Heights,IL,2
+Chickasha,OK,3
+Chico,CA,4
+Chicopee,MA,2
+Childress,TX,1
+Chillicothe,MO,1
+Chillicothe,OH,2
+Chino,CA,3
+Chino Hills,CA,2
+Chino Valley,AZ,1
+Chipley,FL,1
+Chippewa Falls,WI,1
+Christiansburg,VA,3
+Chula Vista,CA,5
+Church Hill,TN,1
+Churchville,NY,1
+Cicero,IL,2
+Cicero,NY,1
+Cincinnati,OH,16
+Circle Pines,MN,2
+Circleville,OH,3
+Citrus Heights,CA,5
+Clare,MI,2
+Claremont,CA,2
+Claremont,NH,1
+Claremore,OK,1
+Clarion,PA,3
+Clarkesville,GA,1
+Clarksburg,WV,4
+Clarksdale,MS,2
+Clarkston,MI,2
+Clarkston,WA,1
+Clarksville,IN,3
+Clarksville,MD,1
+Clarksville,TN,3
+Claymont,DE,2
+Clayton,GA,2
+Cle Elum,WA,2
+Clear Lake,IA,1
+Clearfield,PA,1
+Clearwater,FL,7
+Clearwater Beach,FL,1
+Cleburne,TX,3
+Clementon,NJ,1
+Clemmons,NC,1
+Clemson,SC,2
+Clermont,FL,4
+Cleveland,MS,1
+Cleveland,OH,19
+Cleveland,OK,1
+Cleveland,TN,6
+Cleveland,TX,2
+Clifton,TX,1
+Clifton Park,NY,1
+Clinton,IA,2
+Clinton,IN,1
+Clinton,MA,1
+Clinton,TN,2
+Clinton Township,MI,1
+Clintonville,WI,2
+Clio,MI,1
+Cloquet,MN,1
+Clover,SC,1
+Clovis,CA,3
+Clovis,NM,2
+Coachella,CA,2
+Coal City,IL,1
+Coalinga,CA,3
+Coatesville,PA,1
+Cobleskill,NY,1
+Cocoa,FL,2
+Cody,WY,4
+Coeur d'Alene,ID,2
+Coffeyville,KS,1
+Colchester,VT,1
+Coldwater,MI,2
+College Park,MD,1
+Collierville,TN,3
+Collinsville,IL,4
+Collinsville,VA,3
+Colona,IL,1
+Colonial Heights,VA,1
+Colorado City,TX,1
+Colorado Springs,CO,5
+Colton,CA,4
+Columbia,KY,1
+Columbia,MD,4
+Columbia,MO,4
+Columbia,NJ,1
+Columbia,PA,1
+Columbia,SC,13
+Columbia,TN,4
+Columbia City,IN,2
+Columbus,GA,6
+Columbus,IN,4
+Columbus,MS,1
+Columbus,NE,2
+Columbus,OH,22
+Colusa,CA,1
+Comanche,OK,1
+Commack,NY,2
+Commerce,GA,1
+Compton,CA,2
+Comstock Park,MI,1
+Concord,CA,3
+Concord,MA,1
+Concord,NC,3
+Concord,NH,1
+Conifer,CO,2
+Conley,GA,1
+Connersville,IN,2
+Conover,NC,2
+Conroe,TX,6
+Converse,TX,2
+Conway,AR,3
+Conway,SC,1
+Conyers,GA,6
+Cookeville,TN,4
+Coopersburg,PA,1
+Coos Bay,OR,2
+Copperas Cove,TX,1
+Coralville,IA,2
+Coram,NY,1
+Coraopolis,PA,2
+Corbin,KY,1
+Corcoran,CA,1
+Cordele,GA,1
+Cordova,TN,1
+Cornelia,GA,2
+Cornelius,NC,1
+Cornersville,TN,1
+Corning,NY,2
+Corona,CA,8
+Corona,NY,1
+Corpus Christi,TX,8
+Corrigan,TX,1
+Corsicana,TX,1
+Cortland,NY,2
+Corvallis,MT,1
+Corvallis,OR,4
+Corydon,IN,3
+Cos Cob,CT,1
+Coshocton,OH,1
+Costa Mesa,CA,8
+Cottage Grove,OR,1
+Cottonport,LA,1
+Cottonwood,AZ,1
+Council Bluffs,IA,3
+Covina,CA,3
+Covington,GA,3
+Covington,LA,2
+Cranberry,PA,1
+Cranberry Township,PA,1
+Cranford,NJ,2
+Cranston,RI,1
+Crawfordsville,IN,2
+Crawfordville,FL,2
+Crescent City,CA,2
+Cresco,PA,1
+Cresson,TX,1
+Crest Hill,IL,1
+Creston,IA,1
+Crestview,FL,3
+Crete,NE,1
+Crisfield,MD,1
+Crofton,MD,1
+Crossville,TN,1
+Crowley,LA,1
+Cuba,MO,1
+Cuero,TX,2
+Culpeper,VA,1
+Culver City,CA,2
+Cumberland,MD,4
+Cumming,GA,4
+Cupertino,CA,2
+Curran,MI,1
+Cut Bank,MT,1
+Cut Off,LA,1
+Cuyahoga Falls,OH,4
+Cypress,CA,5
+Cypress,TX,3
+Dacula,GA,1
+Dahlonega,GA,1
+Daingerfield,TX,1
+Daleville,VA,1
+Dallas,GA,4
+Dallas,TX,22
+Dalton,GA,9
+Daly City,CA,4
+Dana Point,CA,4
+Dansville,NY,1
+Danvers,MA,2
+Danville,CA,1
+Danville,IL,2
+Danville,VA,2
+Dardanelle,AR,1
+Darien,IL,1
+Darlington,SC,1
+Davenport,IA,7
+Davis,CA,1
+Davis,OK,1
+Davison,MI,3
+Dayton,NV,2
+Dayton,OH,10
+Dayton,TN,1
+Daytona Beach,FL,4
+De Pere,WI,3
+De Soto,MO,1
+DeFuniak Springs,FL,3
+DeKalb,IL,3
+DeLand,FL,4
+DeRidder,LA,2
+Dearborn,MI,1
+Dearborn Heights,MI,2
+Decatur,GA,4
+Decatur,IL,5
+Decatur,TX,1
+Decherd,TN,1
+Deer Lodge,MT,1
+Deer Park,TX,1
+Deerfield Beach,FL,2
+Defiance,OH,2
+Del Rio,TX,5
+Delafield,WI,3
+Delavan,WI,3
+Delaware,OH,4
+Delmar,DE,2
+Delray Beach,FL,1
+Delta,CO,1
+Deltona,FL,3
+Deming,NM,1
+Denham Springs,LA,1
+Denison,IA,1
+Denison,TX,1
+Denton,TX,4
+Denver,CO,20
+Denver,PA,1
+Depew,NY,1
+Derry,NH,2
+Des Moines,IA,5
+Des Plaines,IL,2
+Desert Hot Springs,CA,1
+Destin,FL,1
+Destrehan,LA,1
+Detroit,MI,8
+Detroit Lakes,MN,1
+Devils Lake,ND,1
+Devon,PA,1
+Dexter,MI,1
+Dexter,MO,1
+Diamond Bar,CA,2
+Dickinson,ND,5
+Dickson,TN,2
+Dillon,SC,1
+Dillsburg,PA,1
+Dinuba,CA,1
+Discovery Bay,CA,1
+Disputanta,VA,1
+District Heights,MD,1
+Dixon,CA,1
+Dixon,IL,2
+Dodge City,KS,3
+Dolton,IL,1
+Dorchester,MA,2
+Dorchester Center,MA,1
+Douglas,AZ,1
+Douglasville,GA,6
+Dover,DE,2
+Dover Plains,NY,1
+Dowagiac,MI,1
+Downers Grove,IL,5
+Downey,CA,2
+Doylestown,PA,1
+Dracut,MA,1
+Draper,UT,4
+Dravosburg,PA,1
+Dresden,OH,1
+Dripping Springs,TX,1
+Drumright,OK,1
+Duarte,CA,3
+Dublin,CA,2
+Dublin,GA,1
+Dublin,OH,1
+Dublin,VA,2
+Dubuque,IA,3
+Duluth,GA,3
+Duluth,MN,5
+Dumas,TX,1
+Dumfries,VA,1
+Duncan,OK,3
+Duncan,SC,1
+Duncanville,TX,2
+Dundalk,MD,2
+Dundee,MI,2
+Dunedin,FL,1
+Dunlap,TN,1
+Dunn,NC,3
+Durango,CO,2
+Durant,OK,4
+Durham,CT,1
+Durham,NC,11
+Dwight,IL,1
+Dyersburg,TN,2
+Eagle,CO,2
+Eagle,ID,1
+Eagle Pass,TX,1
+Eagle River,AK,1
+Early,TX,1
+Easley,SC,3
+East Alton,IL,2
+East Aurora,NY,1
+East Bernard,TX,1
+East Brunswick,NJ,1
+East Greenwich,RI,1
+East Hanover,NJ,1
+East Lansing,MI,3
+East Liverpool,OH,2
+East Meadow,NY,2
+East Northport,NY,1
+East Orange,NJ,2
+East Peoria,IL,3
+East Saint Louis,IL,1
+East Syracuse,NY,1
+East Wareham,MA,4
+East Wenatchee,WA,1
+Easthampton,MA,1
+Eastland,TX,2
+Easton,PA,1
+Eaton Rapids,MI,1
+Eatonton,GA,1
+Eatontown,NJ,2
+Eau Claire,WI,7
+Ebensburg,PA,2
+Ecorse,MI,1
+Eddyville,KY,1
+Eden,NC,1
+Eden,TX,1
+Eden Prairie,MN,1
+Edgewater,FL,2
+Edgewater,MD,2
+Edgewood,MD,1
+Edinburg,TX,2
+Edison,NJ,2
+Edmond,OK,4
+Edmonton,KY,1
+Edna,TX,1
+Edwards,IL,1
+Edwardsville,IL,1
+Effingham,IL,6
+El Cajon,CA,6
+El Campo,TX,1
+El Centro,CA,1
+El Cerrito,CA,1
+El Dorado,KS,1
+El Dorado Springs,MO,1
+El Monte,CA,5
+El Paso,IL,1
+El Paso,TX,12
+El Sobrante,CA,1
+Elberton,GA,2
+Elgin,IL,4
+Elizabeth,PA,1
+Elizabeth City,NC,2
+Elizabethton,TN,1
+Elizabethtown,KY,3
+Elizabethtown,NC,2
+Elizabethtown,PA,1
+Elk City,OK,4
+Elk Grove,CA,1
+Elk Grove Village,IL,2
+Elkhart,IN,3
+Elkins,WV,1
+Elko,NV,2
+Elkridge,MD,1
+Elkton,MD,2
+Elkton,VA,1
+Elkview,WV,1
+Ellicott City,MD,4
+Ellijay,GA,3
+Ellsworth,ME,2
+Ellwood City,PA,1
+Elmhurst,NY,1
+Elmont,NY,1
+Elmwood Park,IL,2
+Elmwood Park,NJ,2
+Eloy,AZ,1
+Elsa,TX,1
+Elyria,OH,4
+Emmett,ID,1
+Emmitsburg,MD,1
+Emporia,VA,2
+Encinitas,CA,2
+Encino,CA,2
+Endicott,NY,4
+Energy,IL,1
+Enfield,CT,1
+Englewood,CO,1
+Englewood,NJ,1
+Englewood,OH,1
+Englishtown,NJ,1
+Enid,OK,2
+Ennis,TX,3
+Enoree,SC,1
+Enosburg Falls,VT,1
+Enumclaw,WA,1
+Ephrata,PA,1
+Ephrata,WA,2
+Erie,PA,4
+Ermine,KY,1
+Erwin,NC,1
+Escanaba,MI,2
+Escondido,CA,5
+Espa√±ola,NM,2
+Essex,MD,1
+Essex Junction,VT,1
+Estero,FL,1
+Eugene,OR,9
+Eunice,LA,2
+Eureka,CA,2
+Eureka,MO,1
+Eustis,FL,2
+Evans,CO,1
+Evans,GA,1
+Evansdale,IA,1
+Evanston,WY,2
+Evansville,IN,3
+Eveleth,MN,1
+Everett,MA,3
+Everett,WA,2
+Evergreen,CO,1
+Exeter,NH,1
+Exmore,VA,1
+Exton,PA,2
+Fair Oaks,CA,1
+Fairbanks,AK,3
+Fairborn,OH,5
+Fairburn,GA,1
+Fairfax,VA,3
+Fairfield,CA,4
+Fairfield,CT,1
+Fairfield,OH,1
+Fairhaven,MA,1
+Fairless Hills,PA,3
+Fairmont,WV,2
+Fairport,NY,2
+Fairview Heights,IL,1
+Fall River,MA,1
+Fallbrook,CA,1
+Falls Church,VA,6
+Falmouth,MA,1
+Far Rockaway,NY,1
+Fargo,ND,5
+Faribault,MN,1
+Farmerville,LA,1
+Farmingdale,NY,1
+Farmington,CT,1
+Farmington,ME,1
+Farmington,MI,1
+Farmington,MO,3
+Farmington,NM,2
+Farmville,NC,1
+Farmville,VA,2
+Fayetteville,AR,5
+Fayetteville,GA,3
+Fayetteville,NC,9
+Fayetteville,NY,1
+Federal Way,WA,2
+Fennville,MI,1
+Fenton,MI,2
+Fenton,MO,2
+Fenwick Island,DE,1
+Ferdinand,IN,1
+Fergus Falls,MN,2
+Festus,MO,1
+Findlay,OH,1
+Fishers,IN,6
+Fitchburg,MA,2
+Fitzgerald,GA,1
+Flagstaff,AZ,3
+Flemington,NJ,1
+Flint,MI,5
+Florence,KY,3
+Florence,OR,3
+Florence,SC,4
+Florissant,MO,3
+Flourtown,PA,1
+Flower Mound,TX,2
+Flowery Branch,GA,3
+Flushing,MI,1
+Follansbee,WV,2
+Folsom,CA,2
+Folsom,PA,1
+Fond du Lac,WI,3
+Fontana,CA,8
+Forest City,IA,1
+Forest Hills,NY,1
+Forest Lake,MN,1
+Forney,TX,1
+Forsyth,GA,1
+Forsyth,IL,1
+Fort Belvoir,VA,1
+Fort Collins,CO,3
+Fort George G Meade,MD,1
+Fort Lauderdale,FL,11
+Fort Lupton,CO,1
+Fort Mill,SC,1
+Fort Myers,FL,4
+Fort Pierce,FL,3
+Fort Scott,KS,1
+Fort Smith,AR,4
+Fort Walton Beach,FL,3
+Fort Washington,MD,1
+Fort Wayne,IN,7
+Fort Worth,TX,9
+Fortuna,CA,1
+Fostoria,OH,1
+Fountain Hills,AZ,2
+Fountain Inn,SC,1
+Fountain Valley,CA,4
+Fox Lake,IL,1
+Frackville,PA,1
+Framingham,MA,2
+Frankenmuth,MI,1
+Frankfort,IL,1
+Frankfort,KY,2
+Frankfort,NY,1
+Franklin,IN,3
+Franklin,KY,2
+Franklin,MA,1
+Franklin,MI,1
+Franklin,TN,3
+Franklin,WI,1
+Franklin Park,NJ,1
+Franklin Square,NY,1
+Franklinton,LA,1
+Fraser,MI,1
+Frederick,MD,4
+Fredericksburg,TX,1
+Fredericksburg,VA,7
+Fredonia,NY,1
+Freedom,CA,1
+Freeport,IL,2
+Freeport,TX,1
+Fremont,CA,8
+Fremont,MI,1
+Fremont,NE,1
+Fremont,OH,2
+Fremont,WI,1
+Fresh Meadows,NY,1
+Fresno,CA,11
+Friendswood,TX,1
+Frisco,TX,3
+Frostburg,MD,1
+Fruitport,MI,1
+Fullerton,CA,9
+Fulton,NY,1
+Gaffney,SC,1
+Gainesboro,TN,1
+Gainesville,FL,5
+Gainesville,GA,6
+Gainesville,TX,2
+Gallatin,TN,2
+Gallipolis,OH,2
+Galt,CA,1
+Gambrills,MD,1
+Garden City,ID,1
+Garden City,KS,1
+Garden Grove,CA,2
+Gardena,CA,6
+Gardner,MA,1
+Garland,TX,4
+Garner,NC,1
+Garwood,NJ,1
+Gary,IN,2
+Gas City,IN,1
+Gaston,SC,1
+Gastonia,NC,5
+Gatlinburg,TN,2
+Geneva,IL,1
+Geneva,NY,2
+Geneva,OH,2
+Georgetown,DE,1
+Georgetown,KY,1
+Georgetown,OH,1
+Georgetown,TX,1
+Germantown,MD,2
+Germantown,TN,2
+Germantown,WI,1
+Gettysburg,PA,2
+Gibson City,IL,1
+Gibsonia,PA,1
+Gilbert,AZ,13
+Gilbert,SC,1
+Gillette,WY,2
+Gilmer,TX,2
+Gilroy,CA,3
+Girard,OH,1
+Gladstone,OR,2
+Glassboro,NJ,1
+Glastonbury,CT,3
+Glen Burnie,MD,4
+Glen Carbon,IL,1
+Glen Cove,NY,1
+Glen Ellyn,IL,2
+Glen Rock,PA,1
+Glen Rose,TX,1
+Glendale,AZ,12
+Glendale,CA,4
+Glendale Heights,IL,1
+Glendive,MT,1
+Glendora,CA,3
+Glenolden,PA,1
+Glenpool,OK,2
+Glenview,IL,2
+Gloucester,VA,1
+Gloversville,NY,1
+Godfrey,IL,2
+Goldsboro,NC,2
+Goleta,CA,1
+Gonzales,CA,1
+Gonzales,LA,4
+Goodland,KS,1
+Goodlettsville,TN,5
+Goodyear,AZ,2
+Goose Creek,SC,1
+Gordonsville,TN,1
+Gordonsville,VA,1
+Goshen,IN,3
+Graceville,FL,1
+Grafton,OH,1
+Grafton,WI,1
+Grafton,WV,1
+Graham,NC,1
+Granada Hills,CA,2
+Grand Blanc,MI,1
+Grand Forks,ND,7
+Grand Haven,MI,1
+Grand Island,NE,5
+Grand Junction,CO,3
+Grand Prairie,TX,5
+Grand Rapids,MI,11
+Grand Rapids,MN,1
+Grandview,MO,2
+Grandville,MI,5
+Granite Bay,CA,1
+Granite City,IL,3
+Grants,NM,2
+Grants Pass,OR,5
+Grantsville,MD,2
+Grapevine,TX,2
+Grass Lake,MI,1
+Grayslake,IL,2
+Great Bend,KS,1
+Great Falls,MT,3
+Greeley,CO,3
+Green Bay,WI,4
+Green River,WY,1
+Green Valley,AZ,1
+Greenbrier,AR,1
+Greencastle,IN,2
+Greeneville,TN,4
+Greensboro,GA,1
+Greensboro,NC,8
+Greensburg,PA,4
+Greenvale,NY,1
+Greenville,AL,1
+Greenville,FL,1
+Greenville,NC,2
+Greenville,OH,1
+Greenville,SC,4
+Greenwich,CT,1
+Greenwood,IN,2
+Greenwood,SC,1
+Greer,SC,4
+Gresham,OR,3
+Gretna,LA,3
+Gretna,NE,2
+Griffin,GA,2
+Grimes,IA,2
+Grindstone,PA,1
+Grinnell,IA,1
+Grove City,OH,4
+Grove City,PA,2
+Grover Beach,CA,1
+Guilford,CT,2
+Gulf Breeze,FL,1
+Gulfport,MS,2
+Gunnison,CO,1
+Gurnee,IL,3
+Gustine,CA,1
+Guthrie,OK,1
+Hacienda Heights,CA,3
+Haddon Heights,NJ,1
+Hagerstown,MD,2
+Haines City,FL,2
+Hales Corners,WI,1
+Haleyville,AL,1
+Hamburg,NY,1
+Hamden,CT,2
+Hamilton,MI,1
+Hamilton,OH,6
+Hamilton,TX,1
+Hammond,IN,2
+Hammond,LA,5
+Hammonton,NJ,1
+Hampstead,MD,1
+Hampton,NH,1
+Hampton,VA,4
+Hancock,NY,1
+Hanford,CA,2
+Hannibal,MO,1
+Hanover,MA,1
+Hanover,MD,3
+Hanover,PA,3
+Happy Valley,OR,3
+Hardinsburg,KY,1
+Harker Heights,TX,2
+Harlan,IA,1
+Harlingen,TX,2
+Harmony,PA,1
+Harrah,OK,1
+Harrington,DE,2
+Harrisburg,IL,1
+Harrisburg,PA,6
+Harrison,AR,1
+Harrison,MI,2
+Harrison,NJ,1
+Harrison,OH,1
+Harrisonburg,VA,2
+Harrisonville,MO,1
+Harrodsburg,KY,1
+Harrold,TX,1
+Hartford,CT,1
+Hartland,MI,3
+Hartsville,SC,3
+Hartsville,TN,1
+Hartville,OH,1
+Hartwell,GA,1
+Harvey,LA,2
+Hasbrouck Heights,NJ,2
+Haskell,TX,1
+Hatfield,PA,1
+Hattiesburg,MS,1
+Haughton,LA,1
+Haverford,PA,1
+Havre,MT,1
+Havre de Grace,MD,1
+Hawaiian Gardens,CA,1
+Hawkinsville,GA,1
+Hawley,PA,1
+Hawthorne,CA,3
+Hawthorne,NJ,1
+Hayes,VA,1
+Hayesville,NC,1
+Hays,KS,1
+Haysville,KS,1
+Hayward,CA,4
+Hazard,KY,1
+Hazel Park,MI,1
+Hazelwood,MO,1
+Healdton,OK,1
+Hebron,NE,1
+Helena,MT,3
+Hemet,CA,3
+Hempstead,NY,1
+Henderson,CO,1
+Henderson,KY,1
+Henderson,NV,5
+Henderson,TN,2
+Hendersonville,NC,1
+Hendersonville,TN,3
+Henrico,VA,7
+Henryetta,OK,2
+Hephzibah,GA,2
+Herculaneum,MO,1
+Hercules,CA,1
+Hereford,TX,1
+Hermiston,OR,1
+Hermitage,PA,3
+Hermitage,TN,4
+Hernando,MS,1
+Herndon,VA,1
+Hesperia,CA,3
+Heyburn,ID,1
+Hialeah,FL,7
+Hiawassee,GA,1
+Hickory,NC,4
+Hicksville,NY,3
+Hidalgo,TX,1
+High Point,NC,3
+Highland,CA,3
+Highland,IL,1
+Highland Park,IL,3
+Hightstown,NJ,1
+Hilliard,OH,7
+Hillsborough,NJ,1
+Hillsdale,MI,3
+Hilo,HI,2
+Hilton Head Island,SC,1
+Hinckley,MN,1
+Hinesville,GA,2
+Hingham,MA,1
+Hiram,GA,2
+Hitchcock,TX,1
+Hixson,TN,3
+Hobart,IN,2
+Hobart,OK,1
+Hobbs,NM,1
+Hobe Sound,FL,1
+Hockessin,DE,2
+Hodgenville,KY,1
+Hoffman Estates,IL,1
+Holland,MI,5
+Holland,OH,3
+Hollis,NY,1
+Hollister,CA,1
+Hollister,MO,2
+Holly,MI,1
+Hollywood,FL,7
+Holmes,PA,2
+Holt,MI,1
+Holyoke,MA,1
+Homer,IL,1
+Homewood,IL,1
+Honolulu,HI,4
+Hood River,OR,1
+Hooksett,NH,2
+Hoopeston,IL,1
+Hope,AR,2
+Hopewell,VA,1
+Hopkins,MN,1
+Hopkinsville,KY,2
+Horn Lake,MS,2
+Horse Shoe,NC,1
+Horseheads,NY,2
+Hot Springs,SD,1
+Hot Springs National Park,AR,5
+Houghton Lake,MI,2
+Houma,LA,6
+House Springs,MO,1
+Houston,MO,1
+Houston,TX,24
+Howell,MI,3
+Howell,NJ,1
+Hudson,MI,1
+Hudsonville,MI,1
+Humble,TX,3
+Humboldt,TN,1
+Huntington,IN,1
+Huntington,TX,1
+Huntington,WV,3
+Huntington Beach,CA,9
+Huntington Park,CA,3
+Huntsville,TX,2
+Huron,OH,1
+Huron,SD,1
+Hurricane,UT,1
+Hurst,TX,1
+Hutchinson,KS,2
+Hutchinson,MN,1
+Hyannis,MA,3
+Hyattsville,MD,2
+Hyde Park,MA,1
+Idaho Falls,ID,4
+Imperial Beach,CA,1
+Independence,IA,1
+Independence,KS,2
+Independence,MO,3
+Independence,OH,2
+Independence,OR,1
+Indian River,MI,1
+Indian Trail,NC,1
+Indiana,PA,2
+Indianapolis,IN,16
+Indio,CA,2
+Ingleside,TX,1
+Inglewood,CA,6
+Inver Grove Heights,MN,1
+Inverness,FL,3
+Inwood,WV,1
+Ionia,MI,2
+Iowa,LA,1
+Iowa City,IA,1
+Iowa Falls,IA,1
+Irmo,SC,1
+Irvine,CA,8
+Irvine,KY,1
+Irving,TX,5
+Irwin,PA,1
+Issaquah,WA,1
+Ithaca,NY,3
+Jackson,CA,1
+Jackson,MI,5
+Jackson,MS,4
+Jackson,OH,1
+Jackson,TN,4
+Jackson,WI,1
+Jacksonville,AR,3
+Jacksonville,FL,15
+Jacksonville,NC,3
+Jacksonville Beach,FL,1
+Jamaica,NY,1
+Jamaica Plain,MA,1
+Jamestown,ND,2
+Jamestown,NY,1
+Janesville,WI,3
+Jasper,GA,2
+Jasper,IN,4
+Jeannette,PA,1
+Jefferson,NC,1
+Jefferson City,MO,4
+Jefferson City,TN,1
+Jeffersonville,IN,1
+Jeffersonville,OH,2
+Jensen Beach,FL,1
+Jericho,NY,3
+Jerome,ID,2
+Jersey City,NJ,3
+Jessup,MD,3
+Jim Thorpe,PA,1
+John Day,OR,1
+Johnson City,NY,2
+Johnson City,TN,4
+Johnson Creek,WI,2
+Johnsonville,SC,1
+Johnstown,CO,1
+Johnstown,NY,1
+Johnstown,OH,1
+Johnstown,PA,7
+Joliet,IL,4
+Jonesboro,AR,3
+Jonesboro,GA,2
+Jonesborough,TN,3
+Jonestown,PA,1
+Jonesville,NC,1
+Jordan,MN,1
+Junction City,KS,2
+Junction City,OR,1
+Jupiter,FL,3
+Kahului,HI,4
+Kailua,HI,1
+Kalamazoo,MI,7
+Kalispell,MT,2
+Kalkaska,MI,1
+Kankakee,IL,3
+Kannapolis,NC,2
+Kansas City,KS,3
+Kansas City,MO,9
+Kapolei,HI,1
+Katy,TX,1
+Kaysville,UT,1
+Kearney,NE,5
+Kearny,NJ,2
+Keego Harbor,MI,1
+Keene,NH,1
+Keller,TX,2
+Kemah,TX,1
+Kenai,AK,1
+Kendallville,IN,2
+Kenedy,TX,1
+Kenly,NC,3
+Kenner,LA,2
+Kennesaw,GA,5
+Kennett Square,PA,1
+Kennewick,WA,1
+Kenosha,WI,5
+Kent,WA,3
+Kenton,OH,1
+Kermit,TX,1
+Kernersville,NC,4
+Kerrville,TX,1
+Kewaskum,WI,1
+Killeen,TX,5
+King City,CA,1
+King George,VA,2
+Kingdom City,MO,1
+Kingman,AZ,3
+Kings Mountain,NC,1
+Kingsburg,CA,1
+Kingsport,TN,3
+Kingston,NY,2
+Kingston,PA,2
+Kingston Springs,TN,1
+Kingstree,SC,1
+Kingwood,TX,1
+Kingwood,WV,1
+Kinston,NC,3
+Kirksville,MO,1
+Kissimmee,FL,9
+Kittanning,PA,1
+Kittery,ME,1
+Klamath Falls,OR,2
+Knoxville,IA,2
+Knoxville,TN,13
+Kokomo,IN,3
+Kouts,IN,1
+Kuttawa,KY,1
+Kyle,TX,1
+Kƒ´hei,HI,1
+La Ca√±ada Flintridge,CA,1
+La Crescenta,CA,2
+La Crosse,WI,1
+La Feria,TX,1
+La Grande,OR,1
+La Grange,KY,1
+La Grange,TX,1
+La Habra,CA,4
+La Marque,TX,1
+La Mesa,CA,1
+La Mirada,CA,2
+La Plata,MD,1
+La Porte,IN,1
+La Porte,TX,2
+La Puente,CA,3
+La Quinta,CA,2
+La Vernia,TX,2
+La Vista,NE,1
+LaGrange,GA,4
+Lacey,WA,1
+Laconia,NH,1
+Lady Lake,FL,1
+Lafayette,CA,1
+Lafayette,CO,1
+Lafayette,IN,3
+Lafayette,LA,4
+Laguna Beach,CA,3
+Laguna Niguel,CA,2
+Lahaina,HI,1
+Lake Charles,LA,3
+Lake City,MN,1
+Lake City,SC,1
+Lake Elsinore,CA,3
+Lake Forest,CA,1
+Lake Geneva,WI,2
+Lake Havasu City,AZ,2
+Lake Hopatcong,NJ,1
+Lake Mary,FL,3
+Lake Orion,MI,3
+Lake Oswego,OR,1
+Lake Park,GA,1
+Lake Saint Louis,MO,1
+Lake Worth,FL,6
+Lake Zurich,IL,1
+Lakeland,FL,5
+Lakeside,CA,1
+Lakewood,CA,1
+Lakewood,NY,2
+Lakewood,WA,3
+Lambsburg,VA,1
+Lancaster,CA,5
+Lancaster,OH,3
+Lancaster,PA,4
+Lancaster,SC,2
+Lancaster,WI,1
+Landrum,SC,2
+Lansing,IL,2
+Lansing,MI,8
+Lapeer,MI,2
+Laramie,WY,1
+Laredo,TX,5
+Largo,FL,4
+Las Cruces,NM,5
+Las Vegas,NM,1
+Las Vegas,NV,22
+Latham,NY,1
+Latonia,KY,1
+Laughlin,NV,1
+Laurel,MD,4
+Laurel,MT,1
+Laurens,SC,1
+Lavallette,NJ,1
+Lavonia,GA,1
+Lawndale,CA,2
+Lawrence,KS,2
+Lawrenceburg,IN,2
+Lawrenceburg,TN,1
+Lawrenceville,GA,5
+Lawrenceville,VA,1
+Lawton,OK,4
+Layton,UT,5
+Le Mars,IA,1
+Le Roy,NY,1
+Leadville,CO,1
+League City,TX,2
+Leander,TX,2
+Leavenworth,KS,1
+Leavenworth,WA,1
+Lebanon,IL,1
+Lebanon,IN,1
+Lebanon,KY,1
+Lebanon,OH,3
+Lebanon,PA,2
+Lebanon,TN,2
+Lebec,CA,2
+Lee,MA,1
+Leechburg,PA,1
+Leesburg,GA,1
+Leesburg,VA,3
+Leesville,LA,1
+Lehi,UT,1
+Lehighton,PA,2
+Leitchfield,KY,1
+Lemon Grove,CA,3
+Lena,IL,1
+Lenexa,KS,1
+Lenoir,NC,4
+Lenoir City,TN,1
+Lenox,MA,1
+Leominster,MA,1
+Levittown,NY,1
+Lewes,DE,2
+Lewis Center,OH,1
+Lewisburg,PA,2
+Lewisburg,WV,1
+Lewiston,ID,1
+Lewiston,ME,1
+Lewisville,NC,1
+Lewisville,TX,1
+Lexington,KY,9
+Lexington,MA,1
+Lexington,NC,5
+Lexington,NE,1
+Lexington,SC,6
+Lexington,VA,2
+Lexington Park,MD,1
+Libby,MT,1
+Liberty,KY,1
+Liberty,MO,1
+Liberty,NY,2
+Liberty,SC,1
+Liberty Lake,WA,2
+Libertyville,IL,1
+Ligonier,PA,1
+Lihue,HI,1
+Lilburn,GA,3
+Lima,OH,6
+Lincoln,CA,2
+Lincoln,IL,1
+Lincoln,NE,10
+Lincoln City,OR,1
+Lincoln Park,MI,3
+Lincolnton,NC,1
+Lindenhurst,NY,1
+Lindon,UT,1
+Lindstrom,MN,1
+Linthicum Heights,MD,3
+Linton,IN,1
+Litchfield,IL,3
+Litchfield Park,AZ,1
+Lithia Springs,GA,3
+Lithonia,GA,4
+Little Chute,WI,1
+Little Elm,TX,2
+Little Falls,MN,2
+Little Rock,AR,6
+Littlestown,PA,1
+Littleton,CO,8
+Littleton,MA,1
+Livermore,CA,3
+Liverpool,NY,1
+Livingston,MT,2
+Livingston,NJ,1
+Livingston,TN,2
+Livonia,MI,4
+Lock Haven,PA,2
+Lockport,IL,2
+Lockport,NY,2
+Locust Grove,GA,2
+Lodi,CA,3
+Logan,OH,4
+Logan,WV,1
+Logansport,IN,1
+Loganville,GA,2
+Loma Linda,CA,1
+Lomita,CA,3
+London,KY,1
+London,OH,1
+Long Beach,CA,12
+Long Beach,NY,1
+Long Beach,WA,1
+Long Branch,NJ,3
+Longmont,CO,3
+Longview,TX,10
+Longview,WA,4
+Longwood,FL,2
+Loogootee,IN,1
+Lordsburg,NM,1
+Loretto,TN,1
+Los Alamitos,CA,2
+Los Alamos,NM,1
+Los Angeles,CA,21
+Los Banos,CA,1
+Los Gatos,CA,1
+Los Lunas,NM,3
+Louisburg,NC,1
+Louisville,CO,1
+Louisville,GA,1
+Louisville,KY,14
+Louisville,NE,1
+Louisville,OH,2
+Louisville,TN,1
+Loveland,CO,4
+Loves Park,IL,2
+Lowell,MA,2
+Lowell,MI,1
+Lubbock,TX,12
+Lufkin,TX,1
+Lugoff,SC,2
+Lumberton,NC,2
+Lumberton,TX,1
+Luray,VA,1
+Lynbrook,NY,1
+Lynchburg,TN,1
+Lynchburg,VA,5
+Lynn,MA,1
+Lynnwood,WA,4
+Lynwood,CA,1
+Mabank,TX,2
+Mableton,GA,1
+Machesney Park,IL,2
+Machias,ME,1
+Macomb,IL,1
+Macomb,MI,1
+Macon,GA,7
+Madison,GA,1
+Madison,IN,1
+Madison,OH,1
+Madison,TN,5
+Madison,WI,9
+Madison Heights,VA,1
+Madisonville,KY,3
+Madisonville,TX,2
+Magna,UT,2
+Magnolia,NJ,1
+Mahomet,IL,1
+Maineville,OH,1
+Maize,KS,1
+Makawao,HI,1
+Malden,MA,3
+Malvern,AR,1
+Manasquan,NJ,2
+Manassas,VA,4
+Manchester,CT,4
+Manchester,GA,1
+Manchester,NH,6
+Mandeville,LA,4
+Mangum,OK,1
+Manhattan,KS,5
+Manhattan Beach,CA,1
+Manistee,MI,1
+Manitou Springs,CO,1
+Manitowoc,WI,1
+Mankato,MN,2
+Manorville,NY,1
+Mansfield,MA,1
+Mansfield,OH,4
+Mansfield,PA,1
+Mansfield,TX,2
+Mansura,LA,1
+Manteca,CA,1
+Manvel,TX,1
+Many,LA,3
+Maple Grove,MN,1
+Marana,AZ,1
+Marathon,FL,1
+Marengo,OH,1
+Marianna,FL,4
+Marietta,GA,8
+Marion,AR,1
+Marion,IA,2
+Marion,IL,1
+Marion,IN,3
+Marion,OH,1
+Marion,VA,3
+Marlborough,MA,2
+Marlin,TX,1
+Marquette,MI,2
+Marrero,LA,4
+Mars Hill,NC,1
+Marshall,MI,1
+Marshall,MN,2
+Marshalltown,IA,3
+Marshfield,WI,1
+Marstons Mills,MA,1
+Martin,TN,1
+Martinez,CA,1
+Martins Ferry,OH,1
+Martinsburg,WV,4
+Martinsville,IN,1
+Martinsville,VA,2
+Mary Esther,FL,2
+Maryland Heights,MO,1
+Marysville,CA,1
+Marysville,KS,1
+Marysville,MI,1
+Marysville,OH,2
+Marysville,WA,3
+Maryville,TN,3
+Mashpee,MA,1
+Mason,OH,5
+Mason City,IA,3
+Massillon,OH,5
+Matthews,NC,2
+Mattoon,IL,1
+Mauldin,SC,2
+Maumee,OH,2
+Maurice,LA,1
+Mayfield,KY,3
+Maynard,MA,2
+Maysville,KY,3
+McAlester,OK,3
+McAllen,TX,4
+McDonough,GA,3
+McHenry,IL,1
+McKeesport,PA,2
+McKinney,TX,3
+McMinnville,OR,3
+McMinnville,TN,3
+McPherson,KS,1
+Meadville,PA,1
+Mebane,NC,1
+Mechanicsburg,PA,2
+Mechanicsville,VA,2
+Medford,MA,2
+Medford,OR,5
+Medina,OH,5
+Melbourne,FL,2
+Melrose,MA,1
+Melrose Park,IL,3
+Melville,NY,1
+Melvindale,MI,1
+Memphis,TN,10
+Mena,AR,1
+Menasha,WI,3
+Menlo Park,CA,1
+Menomonie,WI,1
+Mentor,OH,2
+Merced,CA,2
+Mercer,PA,1
+Meriden,CT,1
+Meridian,ID,3
+Merrick,NY,1
+Merrillville,IN,1
+Merritt Island,FL,2
+Mesa,AZ,13
+Mesquite,TX,8
+Metairie,LA,5
+Metter,GA,3
+Metuchen,NJ,1
+Meyersdale,PA,1
+Miami,FL,17
+Miami,OK,2
+Miami Gardens,FL,1
+Miamisburg,OH,3
+Middle River,MD,1
+Middlebury,IN,1
+Middlefield,OH,1
+Middlesboro,KY,4
+Middleton,ID,2
+Middleton,WI,2
+Middletown,CT,1
+Middletown,DE,2
+Middletown,NY,2
+Middletown,OH,4
+Midland,MI,5
+Midland,TX,1
+Midlothian,IL,1
+Midlothian,VA,3
+Mifflinburg,PA,1
+Mifflinville,PA,1
+Milan,TN,1
+Milford,CT,1
+Milford,OH,1
+Milledgeville,GA,4
+Millen,GA,1
+Millersburg,OH,2
+Millersville,MD,1
+Millington,TN,1
+Millsboro,DE,1
+Milpitas,CA,4
+Milroy,PA,1
+Milton,FL,3
+Milton,WI,1
+Milton,WV,1
+Milwaukee,WI,8
+Mims,FL,1
+Minden,LA,1
+Minden,NV,1
+Mineral Wells,TX,3
+Minneapolis,MN,12
+Minocqua,WI,1
+Minooka,IL,1
+Minot,ND,2
+Miramar Beach,FL,2
+Mishawaka,IN,5
+Mission,TX,1
+Mission Viejo,CA,1
+Missoula,MT,6
+Missouri City,TX,3
+Mitchell,SD,1
+Mobridge,SD,2
+Mocksville,NC,2
+Modesto,CA,6
+Molalla,OR,1
+Moline,IL,6
+Monaca,PA,3
+Monahans,TX,1
+Moncks Corner,SC,3
+Monett,MO,2
+Monmouth,IL,2
+Monmouth Junction,NJ,1
+Monroe,GA,3
+Monroe,LA,4
+Monroe,MI,5
+Monroe,NY,1
+Monroeville,PA,3
+Montclair,CA,2
+Montebello,CA,4
+Monterey,CA,1
+Monterey Park,CA,1
+Montevideo,MN,1
+Montgomery,AL,1
+Montgomery,IL,3
+Montgomery,NY,1
+Monticello,AR,1
+Monticello,IN,1
+Monticello,KY,1
+Monticello,MN,1
+Monticello,MS,1
+Montrose,CO,2
+Montrose,MI,1
+Moorestown,NJ,1
+Mooresville,IN,1
+Mooresville,NC,2
+Moorhead,MN,2
+Mora,MN,1
+Moraga,CA,1
+Morehead,KY,1
+Morehead City,NC,1
+Moreno Valley,CA,1
+Morgan City,LA,5
+Morgan Hill,CA,2
+Morganfield,KY,1
+Morganton,NC,2
+Morgantown,WV,5
+Morrilton,AR,2
+Morris,MN,2
+Morrison,IL,1
+Morristown,NJ,1
+Morristown,TN,4
+Morrisville,NC,3
+Morrisville,PA,1
+Morrow,GA,4
+Morton,IL,1
+Moscow,ID,1
+Moses Lake,WA,1
+Mosinee,WI,1
+Moss Point,MS,1
+Moundsville,WV,1
+Mount Airy,NC,1
+Mount Carmel,IL,1
+Mount Dora,FL,1
+Mount Ephraim,NJ,2
+Mount Gilead,OH,3
+Mount Holly,NJ,2
+Mount Juliet,TN,2
+Mount Kisco,NY,1
+Mount Laurel,NJ,2
+Mount Orab,OH,1
+Mount Pleasant,IA,1
+Mount Pleasant,MI,4
+Mount Pleasant,PA,1
+Mount Pleasant,SC,3
+Mount Pleasant,TX,1
+Mount Pocono,PA,2
+Mount Prospect,IL,2
+Mount Vernon,IA,1
+Mount Vernon,IL,2
+Mount Vernon,MO,1
+Mount Vernon,NY,1
+Mount Vernon,TX,1
+Mount Vernon,WA,2
+Mountain Grove,MO,1
+Mountain View,CA,2
+Moweaqua,IL,1
+Mukwonago,WI,1
+Mulberry,FL,1
+Mullica Hill,NJ,1
+Mullins,SC,1
+Muncie,IN,2
+Mundelein,IL,4
+Munfordville,KY,1
+Munster,IN,1
+Murfreesboro,TN,4
+Murphy,NC,2
+Murphysboro,IL,1
+Murray,KY,1
+Murrells Inlet,SC,1
+Murrieta,CA,3
+Murrysville,PA,2
+Muscatine,IA,2
+Muskego,WI,1
+Muskegon,MI,5
+Muskogee,OK,4
+Mustang,OK,1
+Myrtle Beach,SC,4
+Nampa,ID,3
+Napa,CA,3
+Naperville,IL,2
+Naples,FL,6
+Napoleon,OH,2
+Nashotah,WI,1
+Nashua,NH,4
+Nashville,GA,1
+Nashville,NC,1
+Nashville,TN,16
+Natchez,MS,1
+Natchitoches,LA,1
+Natick,MA,1
+National City,CA,4
+Natrona Heights,PA,1
+Navarre,FL,2
+Nederland,TX,2
+Needham Heights,MA,1
+Neenah,WI,1
+Neodesha,KS,1
+Neoga,IL,1
+Neosho,MO,1
+Neptune Beach,FL,1
+Nesquehoning,PA,1
+New Albany,IN,4
+New Albany,OH,1
+New Bedford,MA,1
+New Bern,NC,1
+New Braunfels,TX,4
+New Britain,CT,2
+New Brunswick,NJ,2
+New Castle,CO,1
+New Castle,DE,5
+New Castle,PA,2
+New City,NY,1
+New Franken,WI,1
+New Haven,CT,1
+New Holland,PA,1
+New Holstein,WI,1
+New Hope,PA,1
+New Hyde Park,NY,1
+New Iberia,LA,1
+New Lexington,OH,2
+New London,CT,1
+New London,WI,1
+New Market,MD,1
+New Market,VA,2
+New Milford,NJ,1
+New Orleans,LA,9
+New Oxford,PA,2
+New Paltz,NY,1
+New Philadelphia,OH,4
+New Port Richey,FL,1
+New Roads,LA,1
+New Smyrna Beach,FL,1
+New York,NY,12
+Newark,DE,3
+Newark,NJ,3
+Newark,OH,6
+Newaygo,MI,1
+Newberg,OR,1
+Newberry,SC,1
+Newbury Park,CA,1
+Newhall,CA,1
+Newland,NC,1
+Newman,CA,1
+Newnan,GA,2
+Newport,OR,2
+Newport,TN,1
+Newport Beach,CA,7
+Newport News,VA,5
+Newton,IL,1
+Newton,MA,1
+Newton,NC,1
+Newton,NJ,1
+Newton Falls,OH,1
+Newton Highlands,MA,1
+Niagara Falls,NY,4
+Niantic,CT,2
+Nicholasville,KY,2
+Niles,IL,4
+Niles,MI,1
+Niles,OH,1
+Nipomo,CA,1
+Noblesville,IN,1
+Nogales,AZ,2
+Norcross,GA,2
+Norfolk,NE,3
+Norfolk,VA,6
+Normal,IL,1
+Norman,OK,9
+Norristown,PA,4
+North Adams,MA,1
+North Andover,MA,1
+North Arlington,NJ,1
+North Augusta,SC,4
+North Aurora,IL,1
+North Babylon,NY,2
+North Bend,OR,1
+North Bend,WA,1
+North Bergen,NJ,1
+North Billerica,MA,2
+North Brunswick,NJ,1
+North Canton,OH,2
+North Charleston,SC,4
+North Chicago,IL,1
+North Haven,CT,1
+North Highlands,CA,1
+North Hills,CA,1
+North Hollywood,CA,2
+North Las Vegas,NV,5
+North Lima,OH,1
+North Little Rock,AR,2
+North Manchester,IN,1
+North Miami Beach,FL,1
+North Myrtle Beach,SC,4
+North Olmsted,OH,3
+North Platte,NE,2
+North Reading,MA,1
+North Richland Hills,TX,3
+North Royalton,OH,2
+North Tonawanda,NY,3
+North Vernon,IN,2
+North Versailles,PA,1
+North Weymouth,MA,1
+Northampton,MA,1
+Northport,NY,1
+Northridge,CA,4
+Northwood,OH,1
+Norwalk,CA,3
+Norwalk,CT,3
+Norway,MI,1
+Norwell,MA,1
+Norwich,NY,1
+Norwood,NJ,1
+Norwood Young America,MN,1
+Nottingham,MD,4
+Nutley,NJ,1
+O Fallon,MO,1
+Oacoma,SD,1
+Oak Brook,IL,2
+Oak Creek,WI,3
+Oak Forest,IL,1
+Oak Lawn,IL,1
+Oak Park,IL,1
+Oak Ridge,TN,1
+Oakdale,CA,1
+Oakland,CA,5
+Oakland,OR,1
+Oakland,TN,1
+Oakridge,OR,1
+Oberlin,OH,1
+Ocala,FL,8
+Ocean City,NJ,2
+Ocean Springs,MS,1
+Oceanside,CA,5
+Oceanside,NY,1
+Ocilla,GA,1
+Ocoee,TN,1
+Oconto Falls,WI,2
+Odenton,MD,1
+Odessa,TX,4
+Ogallala,NE,1
+Ogden,UT,3
+Oglesby,IL,2
+Okeechobee,FL,3
+Okemos,MI,1
+Oklahoma City,OK,15
+Okmulgee,OK,2
+Olathe,KS,3
+Old Greenwich,CT,2
+Old Hickory,TN,2
+Oldsmar,FL,1
+Olean,NY,2
+Olive Branch,MS,1
+Olive Hill,KY,1
+Olivet,MI,1
+Olmsted Falls,OH,1
+Olney,IL,1
+Olympia,WA,7
+Omaha,NE,16
+Oneida,NY,1
+Oneida,TN,1
+Oneonta,NY,1
+Ontario,CA,5
+Ontario,OR,2
+Ooltewah,TN,1
+Opelousas,LA,4
+Orange,CA,4
+Orange City,FL,2
+Orange Park,FL,3
+Orangeburg,SC,3
+Orchard Park,NY,1
+Oregon,OH,1
+Oregon City,OR,4
+Orem,UT,2
+Orlando,FL,18
+Ormond Beach,FL,2
+Osceola,IA,1
+Oshkosh,WI,4
+Osseo,MN,2
+Oswego,IL,2
+Oswego,NY,2
+Ottawa,IL,2
+Ottawa,OH,1
+Ottumwa,IA,1
+Overland Park,KS,6
+Oviedo,FL,5
+Owasso,OK,1
+Owatonna,MN,1
+Owensboro,KY,2
+Owings Mills,MD,2
+Owosso,MI,1
+Oxford,MS,4
+Oxford,OH,2
+Oxnard,CA,8
+Oxon Hill,MD,1
+Ozark,AR,1
+Ozone Park,NY,2
+Pacific,MO,1
+Pacific Grove,CA,1
+Pacific Palisades,CA,1
+Paducah,KY,1
+Pahoa,HI,1
+Painesville,OH,2
+Paintsville,KY,1
+Palatine,IL,3
+Palatka,FL,2
+Palestine,TX,2
+Palm Bay,FL,4
+Palm Beach Gardens,FL,1
+Palm City,FL,1
+Palm Desert,CA,3
+Palmdale,CA,6
+Palmer,AK,1
+Palmetto,FL,2
+Palmyra,IN,1
+Palmyra,ME,1
+Palmyra,PA,1
+Palmyra,VA,1
+Palo Alto,CA,2
+Palos Heights,IL,1
+Palos Hills,IL,1
+Palos Verdes Peninsula,CA,1
+Panama City,FL,5
+Panama City Beach,FL,3
+Panorama City,CA,1
+Paoli,PA,1
+Paragould,AR,1
+Paramount,CA,1
+Paramus,NJ,1
+Paris,IL,1
+Paris,TN,1
+Paris,TX,3
+Park City,UT,1
+Park Hills,MO,2
+Parker,AZ,3
+Parker,CO,3
+Parkersburg,WV,3
+Parkesburg,PA,1
+Parkville,MD,2
+Parlier,CA,1
+Parlin,NJ,1
+Parrish,FL,1
+Pasadena,CA,6
+Pasadena,MD,1
+Pasadena,TX,5
+Pascagoula,MS,2
+Pasco,WA,4
+Pataskala,OH,1
+Patchogue,NY,3
+Pawtucket,RI,2
+Pea Ridge,AR,1
+Peabody,MA,1
+Peachtree City,GA,1
+Peachtree Corners,GA,2
+Pearl,MS,2
+Pearland,TX,3
+Peekskill,NY,1
+Pekin,IL,3
+Pelahatchie,MS,1
+Pemberton,NJ,1
+Pendleton,KY,1
+Pendleton,OR,1
+Pendleton,SC,1
+Penitas,TX,1
+Pennsauken,NJ,1
+Pennsburg,PA,1
+Pensacola,FL,9
+Peoria,AZ,9
+Peoria,IL,5
+Pequannock,NJ,1
+Percival,IA,1
+Perkasie,PA,1
+Perris,CA,2
+Perry,GA,4
+Perry,IA,1
+Perry,OK,1
+Perrysburg,OH,2
+Perryville,MD,1
+Perryville,MO,1
+Perth Amboy,NJ,1
+Peru,IL,2
+Petaluma,CA,1
+Petersburg,IL,1
+Petersburg,VA,2
+Petersburg,WV,2
+Pettus,TX,1
+Pfafftown,NC,1
+Pflugerville,TX,1
+Philadelphia,PA,25
+Philipsburg,PA,1
+Phoenix,AZ,19
+Phoenix,MD,1
+Phoenixville,PA,1
+Pickens,SC,1
+Pickerington,OH,4
+Pico Rivera,CA,1
+Piedmont,OK,1
+Piedmont,SC,4
+Pierre,SD,1
+Pigeon Forge,TN,4
+Pikeville,KY,2
+Pinconning,MI,2
+Pine Bluff,AR,1
+Pinellas Park,FL,3
+Pineville,LA,1
+Pineville,NC,1
+Piney Flats,TN,1
+Pinole,CA,2
+Piqua,OH,1
+Piscataway,NJ,3
+Pismo Beach,CA,1
+Pittsburg,CA,2
+Pittsburg,KS,3
+Pittsburg,TX,1
+Pittsburgh,PA,10
+Pittsfield,IL,1
+Pittsfield,MA,3
+Pittsford,NY,1
+Placentia,CA,1
+Plainfield,IN,3
+Plainfield,NJ,3
+Plainview,NY,2
+Plainville,CT,1
+Plainville,MA,1
+Plainwell,MI,4
+Plano,TX,3
+Plant City,FL,3
+Plaquemine,LA,1
+Platteville,WI,2
+Plattsburgh,NY,2
+Plattsmouth,NE,1
+Pleasant Hill,CA,3
+Pleasanton,CA,3
+Pleasanton,TX,1
+Pleasantville,NY,1
+Plover,WI,1
+Plymouth,MA,3
+Plymouth,MI,4
+Plymouth,NH,2
+Pocahontas,AR,1
+Pocahontas,IA,1
+Pocatello,ID,3
+Pocola,OK,1
+Point Pleasant,WV,2
+Point Pleasant Beach,NJ,1
+Polo,IL,1
+Polson,MT,1
+Pomona,CA,4
+Pomona,NY,1
+Pompano Beach,FL,10
+Ponchatoula,LA,1
+Ponderay,ID,1
+Ponte Vedra Beach,FL,1
+Pontiac,IL,1
+Pontiac,MI,1
+Pontotoc,MS,2
+Pooler,GA,3
+Poquoson,VA,1
+Port Allen,LA,2
+Port Angeles,WA,1
+Port Arthur,TX,1
+Port Barre,LA,2
+Port Charlotte,FL,1
+Port Chester,NY,2
+Port Hueneme,CA,3
+Port Huron,MI,1
+Port Lavaca,TX,1
+Port Orange,FL,2
+Port Orchard,WA,1
+Port Richey,FL,1
+Port Saint Lucie,FL,2
+Port Sulphur,LA,1
+Port Washington,NY,1
+Port Washington,WI,1
+Portage,IN,2
+Portage,MI,3
+Portage,WI,1
+Porterville,CA,1
+Portland,OR,11
+Portland,TN,1
+Portland,TX,1
+Portsmouth,OH,1
+Portsmouth,VA,4
+Post Falls,ID,3
+Poteau,OK,1
+Potomac,MD,3
+Pottstown,PA,2
+Poughkeepsie,NY,1
+Poway,CA,6
+Powder Springs,GA,3
+Powell,OH,2
+Powell,TN,2
+Powell,WY,1
+Powhatan,VA,1
+Prairieville,LA,1
+Pratt,KS,1
+Prescott,AZ,1
+Prescott Valley,AZ,1
+Presque Isle,ME,1
+Prestonsburg,KY,2
+Price,UT,1
+Prince Frederick,MD,1
+Princeton,KY,1
+Princeton,MN,3
+Princeton,TX,1
+Princeton,WV,2
+Prospect,CT,1
+Prospect,KY,1
+Prosser,WA,2
+Providence,RI,4
+Providence Forge,VA,1
+Provo,UT,4
+Prudenville,MI,1
+Pryor,OK,1
+Pueblo,CO,1
+Pulaski,NY,1
+Pulaski,TN,1
+Pulaski,VA,1
+Pullman,WA,3
+Puyallup,WA,5
+Quakertown,PA,2
+Queensbury,NY,1
+Quincy,FL,1
+Quincy,IL,2
+Quincy,MA,4
+Quitman,GA,2
+Racine,WI,4
+Radcliff,KY,2
+Radford,VA,1
+Rahway,NJ,1
+Raleigh,NC,11
+Ramona,CA,2
+Rancho Cordova,CA,2
+Rancho Cucamonga,CA,1
+Rancho Santa Margarita,CA,1
+Randleman,NC,1
+Randolph,MA,1
+Ranger,TX,1
+Rantoul,IL,1
+Rapid City,SD,5
+Raton,NM,1
+Ravenna,OH,1
+Reading,PA,6
+Red Bank,NJ,2
+Red Bluff,CA,2
+Red Bud,IL,1
+Red Oak,TX,1
+Red Springs,NC,1
+Red Wing,MN,1
+Redding,CA,3
+Redford,MI,2
+Redlands,CA,1
+Redmond,OR,1
+Redmond,WA,5
+Redondo Beach,CA,2
+Redwood City,CA,2
+Redwood Falls,MN,1
+Reed City,MI,1
+Reedsburg,WI,1
+Refugio,TX,2
+Rego Park,NY,2
+Reisterstown,MD,1
+Reno,NV,7
+Rensselaer,IN,2
+Rensselaer,NY,1
+Renton,WA,4
+Reseda,CA,3
+Reston,VA,1
+Revere,MA,2
+Rexburg,ID,1
+Reynoldsburg,OH,3
+Rhinelander,WI,1
+Rialto,CA,4
+Rice Lake,WI,2
+Richardson,TX,4
+Richland,MI,1
+Richland,WA,1
+Richland Center,WI,1
+Richlands,VA,1
+Richmond,CA,3
+Richmond,IL,1
+Richmond,IN,1
+Richmond,TX,2
+Richmond,VA,7
+Richton Park,IL,1
+Ridge,NY,1
+Ridgeland,MS,1
+Ridgeland,SC,1
+Ridgeway,VA,1
+Ridley Park,PA,1
+Rigby,ID,1
+Rincon,GA,2
+Ringgold,GA,1
+Rio Rancho,NM,4
+Ripley,WV,1
+Ripon,CA,1
+Ripon,WI,1
+Ririe,ID,1
+Rising Sun,MD,1
+River Falls,WI,1
+Riverbank,CA,1
+Riverhead,NY,2
+Riverside,CA,8
+Riverside,IL,1
+Riverton,NJ,1
+Riverton,UT,1
+Riverton,WY,1
+Roanoke,VA,7
+Roanoke Rapids,NC,2
+Roaring Spring,PA,1
+Rochester,MI,2
+Rochester,MN,6
+Rochester,NH,3
+Rochester,NY,6
+Rock Falls,IL,1
+Rock Hill,SC,1
+Rock Spring,GA,1
+Rock Springs,WY,3
+Rockaway,NJ,1
+Rockford,IL,8
+Rockingham,NC,1
+Rockmart,GA,1
+Rockport,MA,1
+Rockton,IL,1
+Rockville,MD,1
+Rockville Centre,NY,2
+Rockwall,TX,1
+Rocky Mount,NC,1
+Rocky Mount,VA,1
+Rogers,AR,1
+Rogers,MN,2
+Rohnert Park,CA,2
+Roland,OK,1
+Rolesville,NC,1
+Rolla,MO,2
+Rolling Meadows,IL,1
+Rome,GA,4
+Rome,NY,1
+Rome City,IN,1
+Romeoville,IL,1
+Romulus,MI,1
+Roosevelt,NY,1
+Rosamond,CA,1
+Roscoe,IL,1
+Roseburg,OR,4
+Rosedale,MD,4
+Rosemead,CA,2
+Rosenberg,TX,3
+Roseville,CA,9
+Roseville,MI,3
+Roslindale,MA,3
+Rossford,OH,1
+Roswell,GA,1
+Roswell,NM,1
+Rothschild,WI,1
+Round Lake,IL,3
+Round Rock,TX,4
+Rowland Heights,CA,4
+Rowlett,TX,1
+Roxboro,NC,1
+Roy,UT,2
+Royal Oak,MI,5
+Rushville,IN,1
+Rusk,TX,1
+Russellville,AR,1
+Russellville,KY,1
+Rustburg,VA,1
+Ruston,LA,3
+Ruther Glen,VA,1
+Rutherford,NJ,2
+Rutherfordton,NC,1
+Rutland,VT,2
+Sachse,TX,1
+Sacramento,CA,12
+Saddle Brook,NJ,1
+Saginaw,MI,6
+Saint Albans,VT,2
+Saint Augustine,FL,5
+Saint Charles,MO,4
+Saint Clair,MO,1
+Saint Clair,PA,2
+Saint Clair Shores,MI,3
+Saint Clairsville,OH,1
+Saint Cloud,FL,2
+Saint Cloud,MN,2
+Saint Francis,MN,1
+Saint Francisville,LA,1
+Saint George,SC,2
+Saint Helena,CA,1
+Saint James,MN,1
+Saint James,NY,2
+Saint Johns,MI,4
+Saint Joseph,MI,1
+Saint Joseph,MN,1
+Saint Joseph,MO,4
+Saint Louis,MO,12
+Saint Marys,GA,1
+Saint Marys,OH,2
+Saint Marys,PA,1
+Saint Marys,WV,2
+Saint Paul,MN,14
+Saint Peter,MN,3
+Saint Peters,MO,2
+Saint Petersburg,FL,8
+Saint Robert,MO,1
+Salem,MA,2
+Salem,NH,2
+Salem,OR,7
+Salem,VA,2
+Salida,CA,1
+Salina,KS,1
+Salinas,CA,1
+Salisbury,MD,4
+Salisbury,NC,2
+Sallisaw,OK,1
+Salt Lake City,UT,9
+San Angelo,TX,5
+San Antonio,TX,24
+San Bernardino,CA,5
+San Bruno,CA,3
+San Clemente,CA,3
+San Diego,CA,21
+San Diego,TX,2
+San Dimas,CA,3
+San Fernando,CA,1
+San Francisco,CA,11
+San Jacinto,CA,2
+San Jose,CA,16
+San Leandro,CA,3
+San Luis Obispo,CA,3
+San Manuel,AZ,1
+San Marcos,CA,2
+San Marcos,TX,5
+San Mateo,CA,3
+San Pablo,CA,1
+San Pedro,CA,2
+San Rafael,CA,1
+San Ramon,CA,1
+San Ysidro,CA,1
+Sandersville,GA,2
+Sandusky,MI,1
+Sandusky,OH,2
+Sandwich,IL,1
+Sandy,OR,1
+Sandy,UT,1
+Sanford,FL,4
+Sanford,ME,1
+Sanford,NC,1
+Sanger,TX,1
+Santa Ana,CA,7
+Santa Barbara,CA,1
+Santa Clara,CA,8
+Santa Clarita,CA,2
+Santa Cruz,CA,1
+Santa Fe,NM,2
+Santa Fe,TX,1
+Santa Fe Springs,CA,1
+Santa Maria,CA,1
+Santa Monica,CA,3
+Santa Paula,CA,1
+Santa Rosa,CA,4
+Santee,CA,4
+Sapulpa,OK,1
+Sarasota,FL,4
+Saratoga Springs,NY,2
+Saratoga Springs,UT,2
+Saugatuck,MI,1
+Saugerties,NY,1
+Saugus,MA,1
+Sauk City,WI,1
+Savage,MN,2
+Savannah,GA,6
+Sawyer,MI,1
+Sayre,PA,2
+Scarborough,ME,1
+Schaumburg,IL,1
+Schenectady,NY,3
+Schererville,IN,1
+Schertz,TX,1
+Schulenburg,TX,1
+Schuylkill Haven,PA,1
+Scituate,MA,1
+Scotland Neck,NC,1
+Scott,LA,2
+Scotts Valley,CA,1
+Scottsbluff,NE,1
+Scottsdale,AZ,11
+Scottsville,KY,1
+Scranton,PA,1
+Seabrook,NH,1
+Seabrook,TX,1
+Seaford,DE,2
+Seaford,NY,1
+Seagoville,TX,1
+Seal Beach,CA,1
+Searcy,AR,2
+Seaside,CA,1
+Seattle,WA,13
+Sebastian,FL,1
+Sebastopol,CA,2
+Sebring,FL,1
+Secaucus,NJ,1
+Sedalia,MO,1
+Sedona,AZ,1
+Seekonk,MA,2
+Seguin,TX,1
+Selah,WA,1
+Selbyville,DE,1
+Selden,NY,1
+Sellersburg,IN,1
+Selma,CA,1
+Seminole,FL,1
+Seminole,TX,1
+Sequim,WA,1
+Sergeant Bluff,IA,1
+Severn,MD,1
+Severna Park,MD,1
+Sevierville,TN,2
+Seward,NE,1
+Seymour,IN,2
+Seymour,TN,1
+Seymour,TX,1
+Shakopee,MN,4
+Shallotte,NC,1
+Sharon,PA,1
+Shawano,WI,1
+Shawnee,OK,1
+Sheboygan,WI,3
+Sheboygan Falls,WI,1
+Shelby,IA,1
+Shelby,NC,2
+Shelbyville,IL,1
+Shelbyville,IN,2
+Shelbyville,KY,2
+Shelbyville,TN,1
+Shelton,CT,1
+Shelton,WA,1
+Shepherdsville,KY,2
+Sherburne,NY,1
+Sheridan,AR,2
+Sheridan,WY,2
+Sherman,TX,3
+Sherwood,AR,1
+Short Hills,NJ,1
+Show Low,AZ,2
+Shreveport,LA,10
+Sicklerville,NJ,1
+Sidney,OH,2
+Sierra Vista,AZ,4
+Signal Hill,CA,3
+Signal Mountain,TN,1
+Siler City,NC,1
+Silver Spring,MD,2
+Silverdale,WA,3
+Silverthorne,CO,1
+Simi Valley,CA,5
+Simpsonville,KY,1
+Simpsonville,SC,1
+Sinton,TX,1
+Sioux Center,IA,1
+Sioux City,IA,4
+Sioux Falls,SD,9
+Skiatook,OK,1
+Skokie,IL,1
+Slidell,LA,2
+Smithfield,NC,2
+Smithfield,VA,1
+Smiths Grove,KY,1
+Smithville,TN,1
+Smyrna,GA,5
+Smyrna,TN,1
+Snohomish,WA,1
+Snow Hill,NC,1
+Snow Shoe,PA,1
+Snyder,TX,2
+Soda Springs,ID,1
+Solana Beach,CA,1
+Solomons,MD,2
+Somers Point,NJ,1
+Somerset,KY,1
+Somerville,MA,1
+Sonoma,CA,1
+Sonora,CA,1
+South Bend,IN,4
+South Boston,VA,3
+South Burlington,VT,2
+South Charleston,WV,1
+South El Monte,CA,1
+South Elgin,IL,3
+South Gate,CA,5
+South Haven,MI,1
+South Holland,IL,1
+South Lyon,MI,2
+South Ozone Park,NY,1
+South Padre Island,TX,1
+South Point,OH,1
+South Saint Paul,MN,2
+South San Francisco,CA,1
+South Sioux City,NE,1
+South Williamson,KY,1
+South Yarmouth,MA,1
+Southampton,MA,1
+Southaven,MS,4
+Southern Pines,NC,1
+Southfield,MI,2
+Southington,CT,1
+Southlake,TX,2
+Spanish Fork,UT,2
+Sparks,NV,2
+Sparta,NC,1
+Spartanburg,SC,7
+Spearfish,SD,1
+Spencer,MA,1
+Spicer,MN,1
+Spirit Lake,IA,1
+Spiro,OK,1
+Spokane,WA,12
+Spotsylvania,VA,1
+Spring,TX,6
+Spring Branch,TX,1
+Spring Grove,PA,1
+Spring Hill,FL,2
+Spring Hill,TN,1
+Spring Lake,NC,1
+Springboro,OH,4
+Springdale,AR,3
+Springerville,AZ,1
+Springfield,IL,6
+Springfield,MA,5
+Springfield,MO,7
+Springfield,OH,4
+Springfield,OR,1
+Springfield,PA,3
+Springfield,TN,1
+Springfield,VA,2
+Springhill,LA,1
+Springville,NY,1
+Springville,UT,1
+Succasunna,NJ,1
+Suffolk,VA,1
+Sugar Land,TX,1
+Sugarcreek,OH,1
+Sullivan,IL,1
+Sulphur,LA,1
+Sulphur,OK,1
+Sulphur Springs,TX,3
+Summerfield,FL,1
+Summersville,WV,1
+Summerville,SC,3
+Sumter,SC,2
+Sun City,AZ,1
+Sun City Center,FL,1
+Sun Prairie,WI,1
+Sun Valley,CA,1
+Sun Valley,NV,1
+Sunland,CA,3
+Sunnyvale,CA,3
+Surprise,AZ,6
+Suwanee,GA,3
+Swainsboro,GA,1
+Swanton,OH,1
+Swartz Creek,MI,1
+Sweetwater,TN,1
+Sweetwater,TX,1
+Sycamore,IL,1
+Sykesville,MD,2
+Sylmar,CA,2
+Sylva,NC,1
+Sylvania,OH,1
+Sylvester,GA,1
+Syracuse,IN,1
+Syracuse,NY,7
+Tacoma,WA,7
+Tallahassee,FL,10
+Tallmadge,OH,1
+Tampa,FL,11
+Taneytown,MD,1
+Tarboro,NC,3
+Tarpon Springs,FL,1
+Taunton,MA,3
+Taylor,AZ,1
+Taylor,MI,3
+Taylorville,IL,1
+Tecumseh,MI,2
+Tecumseh,OK,1
+Temecula,CA,3
+Tempe,AZ,10
+Temple,PA,1
+Temple,TX,2
+Temple City,CA,3
+Terre Haute,IN,2
+Terrell,TX,2
+Terryville,CT,1
+Texarkana,AR,2
+Texarkana,TX,1
+Texas City,TX,3
+The Dalles,OR,2
+Thermopolis,WY,2
+Thibodaux,LA,4
+Thief River Falls,MN,1
+Thomaston,GA,1
+Thomasville,GA,1
+Thomasville,NC,3
+Thomson,GA,1
+Thousand Oaks,CA,2
+Thurmont,MD,2
+Ticonderoga,NY,1
+Tidioute,PA,1
+Tiffin,OH,1
+Timmonsville,SC,1
+Titusville,FL,1
+Titusville,PA,1
+Tivoli,TX,1
+Toccoa,GA,1
+Toledo,IA,2
+Toledo,OH,9
+Tomah,WI,2
+Tomball,TX,1
+Toms River,NJ,1
+Tonawanda,NY,1
+Topeka,KS,1
+Toppenish,WA,1
+Toronto,OH,1
+Torrance,CA,7
+Townsend,MA,1
+Towson,MD,5
+Tracy,CA,1
+Traverse City,MI,4
+Trenton,GA,2
+Trenton,MI,2
+Trenton,NJ,1
+Trenton,OH,1
+Trexlertown,PA,1
+Triadelphia,WV,1
+Troutdale,OR,1
+Troutman,NC,1
+Troutville,VA,1
+Troy,AL,1
+Troy,IL,1
+Troy,MI,2
+Troy,NY,1
+Troy,OH,2
+Tualatin,OR,1
+Tucker,GA,3
+Tucson,AZ,16
+Tujunga,CA,1
+Tulare,CA,4
+Tullahoma,TN,2
+Tulsa,OK,11
+Tupelo,MS,3
+Turlock,CA,2
+Tuscola,IL,1
+Tustin,CA,4
+Twin Falls,ID,2
+Twinsburg,OH,1
+Two Harbors,MN,1
+Two Rivers,WI,1
+Tyler,TX,8
+Ulysses,KS,1
+Umatilla,FL,1
+Uncasville,CT,1
+Union,KY,1
+Union,MO,1
+Union,NJ,1
+Union,SC,1
+Union City,CA,3
+Union City,MI,1
+Union City,TN,1
+Union Grove,WI,1
+Uniondale,NY,2
+Uniontown,OH,3
+Uniontown,PA,1
+Upland,CA,2
+Upper Darby,PA,1
+Upper Marlboro,MD,1
+Upper Sandusky,OH,3
+Urbana,IL,4
+Urbana,OH,1
+Urbandale,IA,3
+Utica,IL,1
+Utica,MI,3
+Utica,NY,3
+Uvalde,TX,3
+Uxbridge,MA,2
+Vacaville,CA,2
+Vacherie,LA,1
+Valdosta,GA,5
+Valencia,CA,2
+Vallejo,CA,3
+Valley City,ND,1
+Valparaiso,IN,1
+Valrico,FL,1
+Van,TX,1
+Van Buren,AR,1
+Van Nuys,CA,9
+Vancouver,WA,5
+Vandalia,IL,1
+Vandalia,OH,1
+Venice,CA,2
+Venice,FL,2
+Ventura,CA,4
+Veradale,WA,1
+Vermilion,OH,3
+Vermillion,SD,1
+Vernon Hills,IL,1
+Vero Beach,FL,3
+Verona,PA,1
+Vestal,NY,1
+Victoria,TX,3
+Victorville,CA,1
+Vidalia,GA,1
+Vidalia,LA,1
+Vienna,VA,1
+Villa Rica,GA,3
+Ville Platte,LA,1
+Vincennes,IN,3
+Vinita,OK,1
+Vinton,LA,1
+Vinton,VA,1
+Virginia,MN,1
+Virginia Beach,VA,9
+Viroqua,WI,1
+Visalia,CA,1
+Vista,CA,4
+Wabash,IN,1
+Wabasha,MN,1
+Waco,TX,7
+Waconia,MN,2
+Wadena,MN,1
+Wadesboro,NC,1
+Wadsworth,IL,1
+Wadsworth,OH,3
+Wagoner,OK,1
+WahiawƒÅ,HI,1
+Wahoo,NE,1
+Wahpeton,ND,1
+Waianae,HI,1
+Wailuku,HI,1
+Waimanalo,HI,1
+Wake Forest,NC,1
+Wakefield,MA,1
+Walden,NY,1
+Waldo,FL,1
+Waldorf,MD,2
+Walhalla,SC,1
+Walker,MN,1
+Walkersville,MD,1
+Walla Walla,WA,2
+Walled Lake,MI,2
+Waller,TX,1
+Walnut,CA,1
+Walnut Creek,CA,2
+Walnutport,PA,1
+Walpole,MA,1
+Walterboro,SC,1
+Waltham,MA,6
+Walton,KY,2
+Walton,NY,1
+Wapakoneta,OH,1
+Warner Robins,GA,5
+Warren,AR,1
+Warren,IN,1
+Warren,MI,5
+Warren,OH,3
+Warren,PA,1
+Warrensburg,MO,1
+Warrenton,MO,2
+Warrenton,OR,1
+Warrenton,VA,1
+Warrington,PA,1
+Warsaw,IN,3
+Warwick,RI,2
+Waseca,MN,1
+Washington,IL,1
+Washington,IN,1
+Washington,PA,3
+Washington Court House,OH,1
+Waterbury,CT,2
+Waterford,MI,1
+Waterloo,IA,3
+Watertown,MA,2
+Watertown,NY,1
+Watertown,SD,2
+Watertown,TN,1
+Watertown,WI,1
+Waterville,ME,3
+Waterville,OH,1
+Watsonville,CA,2
+Wauchula,FL,1
+Wauconda,IL,2
+Waukegan,IL,4
+Waukesha,WI,4
+Waunakee,WI,1
+Wausau,WI,2
+Wauseon,OH,1
+Wautoma,WI,4
+Waverly,OH,2
+Waxahachie,TX,2
+Waycross,GA,2
+Wayne,MI,1
+Wayne,NJ,1
+Waynesboro,PA,2
+Waynesboro,VA,2
+Waynesville,MO,1
+Waynesville,NC,2
+Waynesville,OH,1
+Wayzata,MN,1
+Weatherford,OK,1
+Weatherford,TX,6
+Webster,MA,1
+Webster,NY,2
+Webster,TX,1
+Weed,CA,1
+Weedsport,NY,1
+Weirton,WV,2
+Welch,WV,1
+Wellington,FL,1
+Wellsburg,WV,1
+Wellsville,NY,1
+Wendell,NC,1
+Wentzville,MO,1
+Weslaco,TX,1
+West Bend,WI,2
+West Berlin,NJ,1
+West Boylston,MA,2
+West Branch,MI,4
+West Bridgewater,MA,2
+West Chester,OH,2
+West Chester,PA,2
+West Columbia,SC,2
+West Covina,CA,4
+West Des Moines,IA,2
+West Fargo,ND,1
+West Frankfort,IL,2
+West Haverstraw,NY,1
+West Helena,AR,1
+West Hills,CA,2
+West Islip,NY,1
+West Jordan,UT,1
+West Lafayette,IN,3
+West Linn,OR,2
+West Memphis,AR,1
+West Mifflin,PA,1
+West Monroe,LA,1
+West Newton,PA,1
+West Nyack,NY,1
+West Palm Beach,FL,2
+West Plains,MO,1
+West Sacramento,CA,2
+West Salem,OH,1
+West Springfield,MA,1
+West Valley City,UT,1
+West Warwick,RI,1
+Westborough,MA,1
+Westbury,NY,3
+Westchester,IL,1
+Westernport,MD,1
+Westerville,OH,3
+Westfield,MA,1
+Westfield,WI,1
+Westlake Village,CA,1
+Westland,MI,1
+Westminster,CA,3
+Westminster,CO,1
+Westminster,MD,1
+Weston,WV,1
+Westover,MD,1
+Wexford,PA,1
+Wharton,TX,1
+Wheat Ridge,CO,1
+Wheatland,WY,1
+Wheaton,IL,2
+Wheelersburg,OH,1
+Wheeling,WV,1
+White City,OR,1
+White Hall,AR,1
+White House,TN,4
+White Lake,MI,3
+Whitefish,MT,2
+Whitehall,MI,1
+Whitehall,PA,3
+Whitehouse,OH,1
+Whitehouse,TX,1
+Whiteland,IN,2
+Whitesboro,TX,1
+Whitestone,NY,1
+Whitestown,IN,1
+Whitewater,WI,1
+Whiting,IN,2
+Whitinsville,MA,1
+Whitmore Lake,MI,1
+Whitney Point,NY,1
+Whitsett,NC,1
+Whittier,CA,4
+Whittier,NC,1
+Wichita,KS,9
+Wichita Falls,TX,5
+Wickenburg,AZ,1
+Wickliffe,OH,1
+Wilburton,OK,1
+Wildomar,CA,1
+Wildwood,FL,1
+Williams,AZ,1
+Williamsburg,KY,1
+Williamsburg,VA,3
+Williamsport,PA,1
+Williamston,SC,1
+Williamstown,NJ,2
+Willis,TX,1
+Williston,ND,3
+Williston,VT,1
+Willits,CA,1
+Willmar,MN,3
+Willoughby,OH,1
+Willow Grove,PA,3
+Willows,CA,2
+Wilmington,CA,1
+Wilmington,DE,4
+Wilmington,MA,1
+Wilmington,NC,2
+Wilmington,OH,1
+Wilson,NC,3
+Wilsonville,OR,1
+Winamac,IN,2
+Winchendon,MA,1
+Winchester,IN,1
+Winchester,KY,1
+Winchester,MA,1
+Winchester,TN,1
+Winchester,VA,2
+Windham,NH,1
+Windsor,CA,2
+Windsor,CO,1
+Windsor,CT,2
+Windsor,NC,1
+Windsor,NY,1
+Windsor Mill,MD,3
+Winner,SD,1
+Winnetka,CA,3
+Winnfield,LA,2
+Winnsboro,TX,1
+Winslow,AZ,2
+Winston-Salem,NC,8
+Winter Haven,FL,1
+Winter Park,FL,2
+Winter Springs,FL,3
+Winterville,NC,1
+Winthrop,MA,1
+Wisconsin Dells,WI,3
+Wisconsin Rapids,WI,2
+Wise,VA,1
+Wixom,MI,2
+Woburn,MA,4
+Wood River,IL,2
+Woodbridge,NJ,1
+Woodbridge,VA,1
+Woodburn,OR,1
+Woodbury,TN,1
+Woodinville,WA,1
+Woodland,CA,1
+Woodland,WA,1
+Woodland Hills,CA,2
+Woodstock,GA,4
+Woodstock,VA,1
+Woodville,TX,1
+Woodward,OK,3
+Woonsocket,RI,1
+Wooster,OH,5
+Worcester,MA,3
+Worthington,MN,2
+Wrens,GA,1
+Wyandotte,MI,1
+Wylie,TX,3
+Wyoming,MI,3
+Wyoming,MN,1
+Wyoming,PA,1
+Wytheville,VA,2
+Xenia,OH,1
+Yakima,WA,4
+Yelm,WA,1
+Yonkers,NY,4
+York,NE,1
+York,PA,6
+York,SC,1
+Yorktown,VA,3
+Yorkville,NY,1
+Youngstown,OH,11
+Ypsilanti,MI,2
+Yucaipa,CA,2
+Yucca Valley,CA,1
+Yukon,OK,3
+Yulee,FL,3
+Yuma,AZ,7
+Zachary,LA,1
+Zanesville,OH,2
+Zebulon,NC,1
+Zeeland,MI,1
+Zion,IL,1
