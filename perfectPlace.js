@@ -251,50 +251,34 @@ function createMap() {
   }
   
    
-   // Function to create layers based on county data
-   function createCountyLayers(response) {
-       response.forEach(county => {
-           // Extracting latitude, longitude, and other county data
-           let lat = parseFloat(county.latitude);
-           let lon = parseFloat(county.longitude);
-        if (!isNaN(lat) && !isNaN(lon)) { // Check for NaN values
+  function createCountyLayers(response) {
+    response.forEach(county => {
+        let lat = parseFloat(county.latitude);
+        let lon = parseFloat(county.longitude);
+        if (!isNaN(lat) && !isNaN(lon)) {
+            let housingCost = parseFloat(county['Average of housing_cost']);
+            let foodCost = parseFloat(county['Average of food_cost']);
+            let taxRate = parseFloat(county['Average of total_tax_rate']);
+            let income = parseFloat(county['Average of median_family_income']);
+            let rain = parseFloat(county['Inches of Rain']);
+            let sun = parseFloat(county['Days of Sun']);
+            let facts = county["ChatGPT_Info"];
+            let popupContent = `<h3>${county['County']}</h3><p>${facts}</p><p>Total Inches of Rain (per year): ${rain}</p><p>Total Days of Sun (per year): ${sun}</p><p>Average Housing Cost (per year): ${housingCost}</p><p>Average Food Cost (per year): ${foodCost}</p><p>Average Tax Rate: ${taxRate}</p><p>Average Median Income (per year): ${income}</p><a href="https://www.google.com/maps/search/?api=1&query=${lat},${lon}" target="_blank">View on Google Maps</a>`;
 
-           // Creating a popup content for each county
-           let facts = county["ChatGPT_Info"];
-           let popupContent = `<h3>${county['County']}</h3><p>${facts}</p>
-                               <p>Total Inches of Rain (per year): ${county['Inches of Rain']}</p>
-                               <p>Total Days of Sun (per year): ${county['Days of Sun']}</p>
-                               <p>Average Housing Cost (per year): ${county['Average of housing_cost']}</p>
-                               <p>Average Food Cost (per year): ${county['Average of food_cost']}</p>
-                               <p>Average Tax Rate: ${county['Average of total_tax_rate']}</p>
-                               <p>Average Median Income (per year): ${county['Average of median_family_income']}</p>
-                               <a href="https://www.google.com/maps/search/?api=1&query=${lat},${lon}" target="_blank">View on Google Maps</a>`;
-   
-           // Creating a marker for each county
-           let marker = L.marker([lat, lon]).bindPopup(popupContent);
-   
-           // Adding markers to respective layers based on category
-           addMarkerToLayer('Housing Cost', county['Average of housing_cost'], marker);
-           addMarkerToLayer('Food Cost', county['Average of food_cost'], marker);
-           addMarkerToLayer('Tax Rate', county['Average of total_tax_rate'], marker);
-           addMarkerToLayer('Income', county['Average of median_family_income'], marker);
-           addMarkerToLayer('Rain', county['Inches of Rain'], marker);
-           addMarkerToLayer('Sun', county['Days of Sun'], marker);
-   
-           // Creating a marker for the all data layer
-           let allDataMarker = L.marker([lat, lon]).bindPopup(popupContent);
-           allDataMarker.data = {
-               housingCost: county['Average of housing_cost'],
-               foodCost: county['Average of food_cost'],
-               taxRate: county['Average of total_tax_rate'],
-               income: county['Average of median_family_income'],
-               rain: county['Inches of Rain'],
-               sun: county['Days of Sun']
-           };
-           allDataLayer.addLayer(allDataMarker);
+            let marker = L.marker([lat, lon]).bindPopup(popupContent);
+            addMarkerToLayer('Housing Cost', housingCost, marker);
+            addMarkerToLayer('Food Cost', foodCost, marker);
+            addMarkerToLayer('Tax Rate', taxRate, marker);
+            addMarkerToLayer('Income', income, marker);
+            addMarkerToLayer('Rain', rain, marker);
+            addMarkerToLayer('Sun', sun, marker);
+
+            let allDataMarker = L.marker([lat, lon]).bindPopup(popupContent);
+            allDataMarker.data = { housingCost, foodCost, taxRate, income, rain, sun };
+            allDataLayer.addLayer(allDataMarker);
         }
-       });
-   }
+    });
+}
    
    // Function to add markers to specified layer with offset for overlapping markers
    function addMarkerToLayer(category, value, marker) {
